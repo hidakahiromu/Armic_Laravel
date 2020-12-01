@@ -13,10 +13,13 @@ class CreateClientTable extends Migration
      */
     public function up()
     {
-        Schema::create('client', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
-        });
+        if(!Schema::hasTable('client')){
+            Schema::create('client', function (Blueprint $table) {
+                $table->bigIncrements('id');
+                $table->timestamps();
+            });
+        }
+        
     }
 
     /**
