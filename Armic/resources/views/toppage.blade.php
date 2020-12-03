@@ -35,14 +35,15 @@
        <li><a><nobr>ニュース</nobr></a></li>
        
             <!--ログイン-->
+                        <!-- ログインしていないゲスト画面の時の表示-->
                         @guest
                             <li class="nav-item">
                               <nobr><a class="nav-link" href="{{ route('login') }}">{{ __('ログイン') }}</a></nobr>
                             </li>
-                          
+                        <!--ゲストここまで -->
                         @else
 
-                           
+                        <!--ログインした後のユーザーネーム表示とマウスカーソルでログアウト表示-->
                             <li><nobr><a href="#">{{ Auth::user()->name }}<span>▼</span></a></nobr>
                               <ul>
                                 <li><nobr><a href="{{ route('logout') }}"
@@ -57,7 +58,7 @@
                               <ul>
                           
                             </li>
-
+                        <!--ログアウトここまで-->
                         @endguest
              </li>
        <!-- ログイン機能ここまで-->
