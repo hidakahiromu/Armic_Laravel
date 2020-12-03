@@ -4413,6 +4413,7 @@ input[type=button].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  margin-left:150px;/*新規登録の配置*/
 }
 
 .nav-link:hover,
@@ -4430,9 +4431,10 @@ input[type=button].btn-block {
   border-bottom: 1px solid #dee2e6;
 }
 
-.nav-tabs .nav-item {
-  margin-bottom: -1px;
-}
+    .nav-tabs .nav-item {
+        margin-bottom: -1px;
+        
+    }
 
 .nav-tabs .nav-link {
   border: 1px solid transparent;
