@@ -36,7 +36,7 @@
         <input type="submit" value="&#xf002">
       </form>
       <p></p>
-      <li><a>
+      <li><a href="{{action('EventController@index')}}">
           <nobr>イベント</nobr>
         </a></li>
       <li><a>
