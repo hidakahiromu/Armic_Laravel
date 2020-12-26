@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Armic</title>
+  <title>ARMIC</title>
   <link rel="stylesheet" href="css/toppage.css">
-  <meta name="description" content="Armic 音楽サイト">
-  <meta http-equiv="X-UA=Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+  <link rel="icon" type="image/x-icon" href="image/armicicon.png">
+  <meta name="description" content="Armic 音楽サイト">
+  <meta http-equiv="X-UA=Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">  
+
 </head>
 
 <body>
@@ -23,12 +25,12 @@
             <nobr>投稿ページ</nobr>
           </a></li>
         <li><a>
-            <nobr>アティスト一覧</nobr>
+            <nobr>アーティスト一覧</nobr>
           </a></li>
       </ul>
     </nav>
     <h1 class="header_logo"><a href="Home.html" 　title="Homeへ">
-        <img src="armic.png" width="200" height="arto"></a>
+        <img src="image/armic.png" width="200" height="arto"></a>
     </h1>
     <ul class="header_list2">
       <form method="get" action="#" class="search_container">
@@ -42,33 +44,9 @@
       <li><a>
           <nobr>ニュース</nobr>
         </a></li>
-       <!--ログイン-->
-        <!-- ログインしていないゲスト画面の時の表示-->
-        @guest
-        <li class="nav-item">
-        <nobr><a class="nav-link" href="{{ route('login') }}">{{ __('ログイン') }}</a></nobr>
-        </li>
-        <!--ゲストここまで -->
-            @else
-            <!--ログインした後のユーザーネーム表示とマウスカーソルでログアウト表示-->
-            <li><nobr><a href="#">{{ Auth::user()->name }}<span>▼</span></a></nobr>
-                <ul>
-                <li><nobr><a href="{{ route('logout') }}"
-                    onclick="event.preventDefault();
-                      document.getElementById('logout-form').submit();">
-                    {{ __('Logout') }}
-                               </a></nobr></li>
-
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    @csrf
-                               </form>
-                          <ul>
-                        
-                    </li>
-                  <!--ログアウトここまで-->
-                @endguest
-            </li>
-      <!-- ログイン機能ここまで-->
+      <li><a href="Registration/Rogu.html">
+          <nobr>ログイン</nobr>
+        </a></li>
     </ul>
   </header>
   <!--スライドショー-->
@@ -80,18 +58,18 @@
     <input type="radio" name="slideshow" id="switch5">
     <div class="slideContents">
       <section id="slide1">
-        <img src="../Armic-test/picture/1.jpg"> </section>
+        <img src="image/armic.png"> </section>
       <section id="slide2">
-        <img src="../Armic-test/picture/2.jpg">
+        <img src="image/armic.png">
       </section>
       <section id="slide3">
-        <img src="../Armic-test/picture/3.jpg">
+        <img src="image/armic.png">
       </section>
       <section id="slide4">
-        <img src="../Armic-test/picture/4.jpg">
+        <img src="image/armic.png">
       </section>
       <section id="slide5">
-        <img src="../Armic-test/picture/5.jpg"> </section>
+        <img src="image/armic.png"> </section>
     </div>
     <p class="arrow prev">
       <i class="ico"></i>
@@ -115,14 +93,14 @@
     <h1 class="slider_ttl">人気投稿ランキング</h1>
     <ul class="horizontal_scroll rank">
       <li>
-        <a href=""><img src=""></a>
+        <a href=""><img src="image/armicicon.png"></a>
         <!--アー写-->
         <div class="bandname">
           <span><small>NEWS</small></span>
         </div>
       </li>
       <li>
-        <a href=""><img src=""></a>
+        <a href=""><img src="image/armicicon.png" width="140px" height="140px"></a>
         <!--アー写-->
         <div class="bandname">
           <span class="rookie">LISA</span>
@@ -206,11 +184,11 @@
     </li>
   </ul>
   　
-  <!--イベントBOX-->
+  <!--イベントBOXidth="auto" height="200px"-->
   　
   　<h2>　　　イベント情報</h2>
   <div class="cp_card04">
-    <div class="photo"><img src="images.jpg" alt=""></div>
+    <div class="photo" ><img src="image/armic.png"alt="" width="auto" height="200px"></div>
     <div class="details">
       <div class="category">
         <p>初ライブ</p>
@@ -226,7 +204,7 @@
     </div>
   </div>
   <div class="cp_card04">
-    <div class="photo"><img src="images.jpg" alt=""></div>
+    <div class="photo"><img src="image/armic.png" alt=""></div>
     <div class="details">
       <div class="category">
         <p>トーク</p>
@@ -245,18 +223,32 @@
 
   <!--ページトップ-->
   <div id="page_top"><a href="#"></a></div>
-  <footer>
-    <div class="footer-logo"><a href=""><img src="armic-logo.png" alt=""></a></div>
-    <div class="about-list">
-      <li><a href="">Q&A</a></li>
-      <li><a href="">お問い合わせ</a></li>
-      <li><a href="">利用規約</a></li>
+  <footer id="footer" class="outer-block">
+    <div class="inner-block">
+      <div class="wrap">
+        <div class="logo">
+          <a href="#"><h1>ARMIC</h1></a>
+        </div>
+        <div class="cont">
+          <div class="c-btn">
+            <a href="#">質問</a>
+          </div>
+          <ul class="nav">
+            <li>ユーザー</li>
+            <li><a href="">ログイン</a></li>
+            <li><a href="">マイページ</a></li>
+          </ul>
+          <ul class="nav">
+            <li>ご利用に際して</li>
+            <li><a href="">Q&A</a></li>
+            <li><a href="">利用規約</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="login-list">
-      <li><a href="">ログイン</a></li>
-      <li><a href="">マイページ</a></li>
+    <div class="copyright">
+      <p><small> © 2020 Armic</small></p>
     </div>
-    <div class="footer-other"><small>© 2020 Armic</small></div>
   </footer>
 </body>
 
