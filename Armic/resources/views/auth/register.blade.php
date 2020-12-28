@@ -9,6 +9,7 @@
       <h1>新規登録</h1>
       <!--↓action = ""送信先 　method = "post"送信形式?URLに送信内容を表示させない（get内容を表示する）-->
       <form method="POST" action="{{ route('register') }}">
+      @csrf
           <!--フォーム要素1（名前）-->
           <!--required="required"-->
         <div class="form-item">
