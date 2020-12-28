@@ -52,13 +52,13 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             /*  追加要素  */
-            'frigana' => ['required' , 'string' , 'max:255'],
-            'userID' =>['required' , 'string' , 'max:255'],
+            /*'frigana' => ['required', 'string', 'max:255'],
+            'userID' => ['required', 'string', 'max:255'],*/
             /*  ここまで  */
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             /* +ここも  */
-            'Usage_contract' => ['required' , 'boolean'],
+            /*'Usage_contract' => ['required', 'boolean'],*/
         ]);
     }
 
@@ -72,8 +72,11 @@ class RegisterController extends Controller
     {
         return User::create([
             'name' => $data['name'],
+            'frigana' => $data['frigana'],
+            'userID' => $data['userID'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'Usage_contract' => $data['Usage_contract'],
         ]);
     }
 }
