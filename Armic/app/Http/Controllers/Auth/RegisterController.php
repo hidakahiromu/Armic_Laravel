@@ -76,7 +76,7 @@ class RegisterController extends Controller
             'userID' => $data['userID'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'Usage_contract' => $data['Usage_contract'],
+
         ]);
     }
 }
