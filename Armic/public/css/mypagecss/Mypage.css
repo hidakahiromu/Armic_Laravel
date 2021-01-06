@@ -1,0 +1,326 @@
+.Mypage_background {
+    background: #fafafa;
+    /*バックグラウンド*/
+    margin: 38px auto;
+    /*バックグラウンドの位置*/
+    padding: 100px 100px;
+    /*バックグラウンドの内側の隙間*/
+    width: 1000px;
+    /*バックグラウンド横幅1000px以外許さねえ*/
+    height: auto;
+    /*高さ子に合わせるよ書かなくてもいい*/
+}
+
+
+/*ボーダーの設定*/
+
+
+/*
+.Mypage_box1 {    
+border: solid 3px #000000;
+
+.Mypage_box1 p{
+margin: 10em; 
+}
+*/
+
+.Mypage_Allbox {
+    position: relative;
+    /*absluteの親設定*/
+}
+
+.Mypage_NameIcon_box {
+    position: relative;
+    /*absluteの親設定*/
+    height: 200px;
+    /*高さを子absoluteに合わせる*/
+    width: 800px;
+    /*インラインを800pxに限定*/
+}
+
+.Mypage_NameBox {
+    position: absolute;
+    /*他要素ガン無視*/
+    left: 0px;
+    background: #fafafa;
+    width: 500px;
+    height: 200px;
+    padding: 40px 40px;
+    /*文字の配置位置*/
+    border: solid 2px #c0c0c0;
+    overflow-wrap: break-word;
+}
+
+.Mypage_NameBox p {
+    overflow: hidden;
+    line-height: 150%;
+    font-size: 33px;
+    color: #000;
+}
+
+.Mypage_config {
+    position: absolute;
+    /*他要素ガン無視*/
+    overflow: hidden;
+    bottom: 0px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+}
+
+.Mypage_Conpfig_button {
+    border: none;
+    background: #00cfcf;
+}
+
+.Mypage_Conpfig_button:hover {
+    background: #009292;
+}
+
+.Mypage_NameBox .Mypage_config p {
+    color: #000;
+    font-size: 1em;
+}
+
+.Mypage_IconBox {
+    position: absolute;
+    /*他要素ガン無視*/
+    overflow: hidden;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    border: solid 3px #c0c0c0;
+}
+
+.Mypage_IconChangeBox {
+    position: absolute;
+    right: 0px;
+    padding: 0px 0px;
+}
+
+.Mypage_MusicBox {
+    margin-top: 50px;
+    /*.Mypage_IconChangeBoxがabsoluteのためNameIcon_boxから50pxはなれ*/
+    height: 200px;
+}
+
+.Mypage_button {
+    border: none;
+    background: #00cfcf;
+}
+
+.Mypage_button:hover {
+    background: #009292;
+}
+
+.Mypage_MusicBox p {
+    color: #fff;
+    font-size: 40px;
+}
+
+
+/*----------------------------過去に投稿した音楽*/
+
+.Mypage_Posted_MusicBox {
+    margin-top: 50px;
+    height: auto;
+    /*表の高さ*/
+    width: 800px;
+    border: solid 2px #c0c0c0;
+}
+
+.Mypage_MusicBox_Delete {
+    width: 100%;
+    height: 100%;
+}
+
+.Mypage_Delete_button {
+    border: none;
+    background: rgb(253, 111, 253);
+}
+
+.Mypage_Delete_button:hover {
+    background: rgb(250, 0, 250);
+}
+
+.Mypage_MusicBox_Delete p {
+    color: #fff;
+    font-size: 1em;
+}
+
+.Mypage_Posted_MusicBox_Table {
+    border-collapse: collapse;
+    /*表ボーダー二重線解除*/
+    width: 100%;
+    
+}
+
+.Mypage_Posted_MusicBox_Table tr * {
+    border: solid 1px #c0c0c0;
+}
+
+.Mypage_Posted_MusicBox_TableNumber {
+    width: 10%;
+}
+
+.Mypage_Posted_MusicBox_TableMusic {
+    width: 35%;
+}
+
+.Mypage_Posted_MusicBox_TableTime {
+    width: 25%;
+}
+
+.Mypage_Posted_MusicBox_TableSter {
+    width: 15%;
+}
+
+.Mypage_Posted_MusicBox_TableDelete {
+    width: 15%;
+}
+
+
+/*----------------*/
+
+.Mypage_Input_Posted_MusicBox {
+    margin-top: -1px;
+    border-collapse: collapse;
+    /*表ボーダー二重線解除*/
+    height: auto;
+    /*表の高さ*/
+    width: 100%;
+}
+
+.Mypage_Input_Posted_MusicBox tr * {
+    border: solid 1px #c0c0c0;
+}
+
+.Mypage_Input_Posted_MusicBox tr td {
+    text-align: left;
+}
+
+.Details_label {
+    width: 100%;
+    display: block;
+    margin: 0;
+    color: #ffffff;
+    background: #00cfcf;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Details_label:hover {
+    background: #009292;
+}
+
+.Mypage_10menu {
+    display: none;
+}
+
+.menu ul {
+    width: 100%;
+    margin: 0px 0;
+    /*なぜか空白が開くので*/
+    padding: 0;
+    /*未解決*/
+    list-style: none;
+    text-align: center;
+}
+
+.menu li {
+    height: 0px;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#change01:checked~#links01 li {
+    height: auto;
+}
+
+
+/*----------------ここから下いいねをした音楽*/
+
+.Mypage_GoodPosted_MusicBox {
+    margin-top: 50px;
+    height: auto;
+    /*表の高さ*/
+    width: 800px;
+    border: solid 2px #c0c0c0;
+}
+
+.Mypage_GoodPosted_MusicBox_Table {
+    border-collapse: collapse;
+    /*表ボーダー二重線解除*/
+    width: 100%;
+}
+
+.Mypage_GoodPosted_MusicBox_Table tr * {
+    border: solid 1px #c0c0c0;
+}
+
+.Mypage_GoodPosted_MusicBox_TableNumber {
+    width: 10%;
+}
+
+.Mypage_GoodInput_Posted_MusicBox {
+    margin-top: -1px;
+    border-collapse: collapse;
+    /*表ボーダー二重線解除*/
+    height: 100%;
+    /*表の高さ*/
+    width: 100%;
+}
+
+.Mypage_GoodInput_Posted_MusicBox tr * {
+    border: solid 1px #c0c0c0;
+}
+
+.Mypage_GoodInput_Posted_MusicBox tr td {
+    text-align: left;
+}
+
+.GoodDetails_label {
+    width: 100%;
+    display: block;
+    margin: 0;
+    color: #ffffff;
+    background: #00cfcf;
+    cursor: pointer;
+    text-align: center;
+}
+
+.GoodDetails_label:hover {
+    background: #009292;
+}
+
+.Mypage_Good10menu {
+    display: none;
+}
+
+.Goodmenu ul {
+    width: 100%;
+    margin: 0px 0;
+    /*なぜか空白が開くので*/
+    padding: 0;
+    /*未解決*/
+    list-style: none;
+    text-align: center;
+}
+
+.Goodmenu li {
+    height: 0px;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#change02:checked~#links02 li {
+    height: auto;
+}
