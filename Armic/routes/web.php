@@ -31,23 +31,6 @@ Route::get('/artistlist', function () {
     return view('artistlist/artistlist');
 });
 
-Route::get('/mypage', function () {
-    return view('mypage.Mypage');
-});
-Route::get('/mypage/Delete', function () {
-    return view('mypage.Mypage_Delete');
-});
-Route::get('/mypage/Musicpost', function () {
-    return view('mypage.Mypage_Music');
-});
-Route::get('/mypage/artistname', function () {
-    return view('mypage.MypageConfig');
-});
-
-
-
-
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

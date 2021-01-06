@@ -1,6 +1,6 @@
-<head>
-  <link rel="stylesheet" href="css/toppage.css">
-</head>
+<link>
+<link rel="stylesheet" href="css/toppage.css">
+</link>
 
 @extends('layouts.app')
 

@@ -54,12 +54,6 @@
           <div><a href="#">{{ Auth::user()->name }}<span>▼</span></a></div>
           <ul class='ulul shadowrogout_ul'>
             <li class='shadowrogout_li'>
-              <nobr><a href="/mypage">
-                  マイページ
-                </a></nobr>
-            </li>
-
-            <li class='shadowrogout_li'>
               <nobr><a href="{{ route('logout') }}" onclick="event.preventDefault();
                       document.getElementById('logout-form').submit();">
                   {{ __('Logout') }}
