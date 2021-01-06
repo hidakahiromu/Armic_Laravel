@@ -11,7 +11,7 @@
     <div class="row justify-content-center">
       <div class="col-md-8">
         <div class="card">
-          <h1>新規登録</h1>
+          <h2>新規登録</h2>
 
           <div class="card-body">
             <form method="POST" action="{{ route('register') }}">

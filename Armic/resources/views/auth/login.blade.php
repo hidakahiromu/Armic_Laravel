@@ -7,7 +7,7 @@
 
 <!--ログインフォーム始-->
 <div class="form-wrapper">
-  <h1>ログインしよう</h1>
+  <h2>ログインしよう</h2>
   <!--↓action = ""送信先 　method = "post"送信形式?URLに送信内容を表示させない（get内容を表示する）-->
   <form method="POST" action="{{ route('login') }}">
     @csrf

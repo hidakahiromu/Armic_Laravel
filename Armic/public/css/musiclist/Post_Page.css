@@ -1,0 +1,141 @@
+/* Simple Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* body */
+.body{
+    background: #e9e9e9;
+    color: #5e5e5e;
+    font: 400 87.5%/1.5em 'Open Sans', sans-serif;
+  
+}
+
+
+
+/*投稿一覧表示*/
+.post_group{
+    margin-top: 30px;
+}
+.post_group ul{
+    list-style:none;
+    /*display: flex;を使用した配置*/
+    display: -webkit-flex;
+    display: flex;
+}
+.post_group ul li{
+    padding: 10px;
+}
+    /*作品詳細の幅を固定*/
+ul li:nth-of-type(2),li:nth-of-type(4) {
+    -webkit-flex-basis: 270px;
+    flex-basis: 270px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}　
+
+
+/*ページトップへのアイコン*/
+#page_top{
+    width: 100px;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #ef3f98;
+    opacity: 0.6;
+    border-radius: 15px;
+}
+#page_top a{
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 60px;
+    text-decoration: none;
+}
+#page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -25px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+#page_top a::after{
+    content: 'PAGE TOP';
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+/*フッダー*/
+#footer{
+    background-color: white ;
+}  
+#footer .logo {
+    display: inline-block;
+    width: 120px;
+    margin: 0 30px;
+}
+  
+#footer .nav li a {
+    padding: 20px;
+    color: black;
+}
+  
+ #footer .c-btn {
+    margin-left: 45px;
+    padding: 0 0 0 3px;
+    margin-right: 30px;
+}
+  
+  
+@media screen and (min-width: 641px) {
+    #footer.logo {
+        padding: 100px 0;
+    }
+
+    #footer .wrap {
+        padding: 20px 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #footer .cont {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #footer .nav {
+        display: inline-block;
+        list-style: none;
+    }
+
+    #footer .nav li a:hover {
+        color: #ca353b;
+        
+    }
+    #footer .copyright{
+        text-align: center
+    }
+}

@@ -1,0 +1,154 @@
+
+.body{
+    background-image:url("/image/test.svg");
+  }
+  
+  .menu {/*リストの真ん中表示*/
+    max-width: 400px;
+    text-align:center;
+    position:relative;
+    margin: 0 auto;
+  }
+  
+  .menu a {/*アーティスト名の装飾*/
+    display: block;
+    padding: 10px ;
+    margin: 5px;
+    color: #000;
+    margin-right:35px
+  }
+  
+  label {/*○行の偶数部分のリスト*/
+    display: block;
+    margin: 5px 0 0 0;
+    padding : 15px;
+    line-height: 1;
+    color :#fff;
+    background : skyblue;
+    cursor :pointer;
+  }
+  
+  .odd{/*○行の奇数部分のリスト(配色を交互にする）*/
+    display: block;
+    margin: 5 0 0 0;
+    padding : 15px;
+    line-height: 1;
+    color :#fff;
+    background : cornflowerblue;
+    cursor :pointer;
+  }
+  
+  .menu input {
+    display: none;
+    border: none;
+  
+  }
+  
+  
+  
+  .menu ul {
+    margin: 0 0 0 0;
+    background :#f4f4f4;
+    color :#fff;
+    line-height: 1;
+    list-style: none;
+  }
+  
+  .menu li {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  
+  #menu_bar01:checked ~ #links01 li,
+  #menu_bar02:checked ~ #links02 li,
+  #menu_bar03:checked ~ #links03 li,
+  #menu_bar04:checked ~ #links04 li,
+  #menu_bar05:checked ~ #links05 li,
+  #menu_bar06:checked ~ #links06 li,
+  #menu_bar07:checked ~ #links07 li, 
+  #menu_bar08:checked ~ #links08 li,
+  #menu_bar09:checked ~ #links09 li,
+  #menu_bar10:checked ~ #links10 li,
+  #menu_bar11:checked ~ #links11 li,
+  #menu_bar12:checked ~ #links12 li
+  {
+    height: 54px;
+    opacity: 1;
+  }
+  
+  /*動く斜線 */
+  
+  #home-anim{
+    z-index: 0;
+    position: fixed;
+  }
+  
+  
+  #home {
+    clip-path: url(#cache);
+  }
+  
+  #red {
+    fill: none;
+    opacity: 0.15;
+    stroke: violet;
+    stroke-width: 12;
+    stroke-miterlimit:10;
+    animation: show 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+  }
+  
+  #blue {
+    fill: none;
+    opacity: 0.15;
+    stroke: blueviolet;
+    stroke-width: 12;
+    stroke-miterlimit:10;
+    animation: show 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  #light-blue {
+    fill: none;
+    opacity: 0.15;
+    stroke: blue;
+    stroke-width: 6;
+    stroke-miterlimit:10;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 800;
+    animation: draw 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;    
+  }
+  
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+   }
+      }
+  
+  @keyframes show {
+    0% {
+      opacity: 0.15;
+   }
+    50% {
+      opacity: 0.2;
+   }
+    100% {
+      opacity: 0.15;
+   }
+      }
+  
+  
+  
