@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>ARMIC</title>
-  <link rel="stylesheet" href="css/app.blade.css">
+  <link rel="stylesheet" href="../css/app.blade.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
-  <link rel="icon" type="image/x-icon" href="image/armicicon.png">
+  <link rel="icon" type="image/x-icon" href="../image/armicicon.png">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <meta name="description" content="Armic 音楽サイト">
   <meta http-equiv="X-UA=Compatible" content="IE=edge">
@@ -31,7 +31,7 @@
       </ul>
       <!--ロゴ-->
       <h1 class="header_logo"><a href="/" 　title="ARMIC">
-          <img src="image/armic.png" width="200" height="68px"></a>
+          <img src="../image/armic.png" width="200" height="68px"></a>
       </h1>
       <!--右の要素-->
       <ul class="header_list header_list2 ulul">
