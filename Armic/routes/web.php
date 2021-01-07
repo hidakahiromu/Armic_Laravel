@@ -20,7 +20,7 @@ Route::get('/postmovie', function () {
     return view('musiclist/Post_Page');
 });
 /*動画詳細*/
-Route::get('/in', function () {
+Route::get('/postmovie/in', function () {
     return view('musiclist/playmusic/post-in');
 });
 /*イベント*/

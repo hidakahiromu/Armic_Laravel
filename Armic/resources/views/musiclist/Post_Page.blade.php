@@ -13,7 +13,7 @@
         <nobr><iframe width="320" height="180" src="https://www.youtube.com/embed/Y0R2fCN_H1w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></nobr>
       </li>
       <li calss="post_element_1">
-        <a href="/in" title="詳細">
+        <a href="/postmovie/in" title="詳細">
           <nobr>悔やむと書いてミライ</nobr>
         </a><br>
         <a href="アーティストページのlink" title="アーティスト">アーティスト</a><br><br><br>

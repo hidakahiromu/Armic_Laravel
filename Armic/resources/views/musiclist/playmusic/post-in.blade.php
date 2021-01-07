@@ -1,9 +1,9 @@
 <head>
-  <link rel="stylesheet" href="css/musiclist/post-in.css">
+  <link rel="stylesheet" href="../css/musiclist/post-in.css">
 </head>
 
 
-@extends('layouts.app')
+@extends('layouts.app-2')
 @section('content')
 
 <!--動画-->
