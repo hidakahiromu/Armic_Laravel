@@ -2,6 +2,7 @@
   <link rel="stylesheet" href="css/toppage.css">
 </head>
 
+
 @extends('layouts.app')
 
 @section('content')
