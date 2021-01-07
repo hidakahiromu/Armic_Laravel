@@ -29,12 +29,18 @@ class Kernel extends HttpKernel
     protected $middlewareGroups = [
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
+            //Cookie の暗号化/復号化処理を行う機能
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+            //指定された Cookie を Response ヘッダに登録する機能
             \Illuminate\Session\Middleware\StartSession::class,
+            //Session の生成や取得などを行う機能
             // \Illuminate\Session\Middleware\AuthenticateSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+            //Session に保存されたエラー情報を View にセットする機能
             \App\Http\Middleware\VerifyCsrfToken::class,
+            //CSRF を防ぐためのトークンの発行やチェックを行う機能
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            //Route Model Binding を実行する機能（Laravel5.3から追加）
         ],
 
         'api' => [
@@ -52,11 +58,13 @@ class Kernel extends HttpKernel
      */
     protected $routeMiddleware = [
         'auth' => \App\Http\Middleware\Authenticate::class,
+        //特定のルートへのアクセスに対してユーザー認証を行う機能
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+        //認証済かチェックし、認証済であれば /home にリダイレクトする機能
         'password.confirm' => \Illuminate\Auth\Middleware\RequirePassword::class,
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
