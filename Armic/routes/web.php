@@ -26,9 +26,11 @@ Route::get('/postmovie/in', function () {
 });
 
 /*イベント*/
+/*
 Route::get('/event', function () {
     return view('eventlist/eventlist');
 });
+*/
 Route::get('/artistlist', function () {
     return view('artistlist/artistlist');
 });
@@ -46,16 +48,18 @@ Route::get('/mypage/artistname', function () {
     return view('mypage.MypageConfig');
 });
 
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/event', 'EventController@index')->name('event');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+
 
 /*
 Route::get('/', function () {
