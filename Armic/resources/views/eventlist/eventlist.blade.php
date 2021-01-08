@@ -54,7 +54,7 @@
 <li class="sbs">
     <h2 class="slider_ttl">新着イベント</h2>
     <!--イベント新規作成↓-->
-    <div class="new_create"><a href="">新規作成</a> </div>
+    <div class="new_create"><a href="/event/eventRegistration">新規作成</a> </div>
 </li>
 <!--イベント新規作成↑-->
 <div class="event_all">

@@ -57,6 +57,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/event', 'EventController@index')->name('event');
 
+Route::resource('/event/eventRegistration', 'EventRegistrationController');
+
+
 /*
 Route::get('/', function () {
     return view('welcome');
