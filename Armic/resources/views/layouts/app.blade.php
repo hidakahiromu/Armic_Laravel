@@ -100,8 +100,8 @@
 
         <ul class="nav">
           <li>ご利用に際して</li>
-          <li><a href="">Q&A</a></li>
-          <li><a href="">利用規約</a></li>
+          <li><a href="/q&a">Q&A</a></li>
+          <li><a href="/terms">利用規約</a></li>
         </ul>
       </div>
     </div>

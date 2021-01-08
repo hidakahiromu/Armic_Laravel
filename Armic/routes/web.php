@@ -39,6 +39,7 @@ Route::get('/mypage', function () {
 Route::get('/mypage/Delete', function () {
     return view('mypage.Mypage_Delete');
 });
+
 Route::get('/mypage/Musicpost', function () {
     return view('mypage.Mypage_Music');
 });
@@ -46,10 +47,14 @@ Route::get('/mypage/artistname', function () {
     return view('mypage.MypageConfig');
 });
 
+/* other(Q&Aとか利用規約とか)*/
+Route::get('/q&a', function () {
+    return view('other/q&a');
+});
+Route::get('/terms', function () {
+    return view('other/terms');
+});
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 

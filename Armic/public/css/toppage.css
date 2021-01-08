@@ -573,4 +573,106 @@ body {
     text-align: right;
   }
 }
-  
+
+
+
+
+/*利用規約*/
+.Terms{
+  margin: 4em;
+  padding: 20px;
+  background-color: #FFF;
+}
+.TermsTop{
+  font-size: 30px;
+  margin: 10px;
+  font-weight: bold;
+}
+.TermsText{
+  margin: 3em;
+}
+.TermsTreaty{
+  font-weight: bold;
+}
+
+/*プライバシーポリシー*/
+.Privacy{
+  margin: 4em;
+  padding: 20px;
+  background-color: #FFF;
+}
+.PrivacyTop{
+  font-size: 30px;
+  margin: 10px;
+  font-weight: bold;
+}
+.PrivacyText{
+  margin: 3em;
+}
+.PrivacyTreaty{
+  font-weight: bold;
+}
+
+.QATitle{
+  margin: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.QA *, .QA *:after, .QA *:before {
+font-family: 'FontAwesome', sans-serif;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+}
+.QA {
+  position: relative;
+  margin-top: 50px;
+}
+.QA .QA1 {
+font-weight: bold;
+position: absolute;
+top: 0;
+left: 0;
+display: inline-block;
+width: 14.5em;
+height: auto;
+padding: 0em;
+text-align: center;
+}
+.QA dl {
+line-height: 1.5;
+position: relative;
+display: inline-block;
+margin: 0 0 2em 15em;
+padding: 0 0 0 1em;
+border-left: 1px solid #333333;
+}
+.QA dl::before {
+font-size: 5em;
+position: absolute;
+display: inline-block;
+top: 0;
+left: -2em;
+width: 1em;
+height: 1em;
+line-height: 1em;
+content: '\f059';
+opacity: 0.1;
+}
+.QA dt {
+margin: 0 0 1em 3em;
+}
+.QA dd {
+margin: 0 0 1.5em 3em;
+}
+.QA dt::before,.QA dd::before {
+font-family: serif;
+font-size: 1.3em;
+margin: 0 1em 0 -1.7em;
+}
+.QA dt::before {
+content: 'Q';
+}
+.QA dd::before {
+content: 'A';
+}
