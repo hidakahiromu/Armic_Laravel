@@ -3,7 +3,7 @@
 </head>
 
 
-@extends('layouts.app-2')
+@extends('layouts.app')
 @section('content')
 
 <!--動画-->

@@ -1,7 +1,7 @@
 <head>
     <link rel="stylesheet" href="../css/mypagecss/Mypage_Delete.css">
 </head>
-@extends('layouts.app-2')
+@extends('layouts.app')
 @section('content')
 
 <div class="body">
