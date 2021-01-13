@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Http\Request;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,10 +51,9 @@ Route::get('/artistlist', function () {
     return view('artistlist/artistlist');
 });
 
-Route::get('/artistlist/artistlistRegistration' , 'artistlistRegistrationController@index');
-
-Route::post('/artistlist/artistlistFinish' , 'artistlistRegistrationController@create');
-
+Route::get('/artistlist/artistlistRegistration', 'artistlistRegistrationController@index');
+Route::post('/artistlist/artistlistFinish', 'artistlistRegistrationController@create');
+/*Route::post('/artistlist/artistlistRegistration', 'artistlistRegistrationController@create');*/
 /* other(Q&Aとか利用規約とか)*/
 Route::get('/q&a', function () {
     return view('other/q&a');

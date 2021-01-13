@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserMusic extends Model
 {
-    protected $primaryKey = 'userID';
+    /*protected $primaryKey = 'userID';*/
     protected $fillable = [
-       'userID' , 'artistName','artistFrigana'
+        'userID', 'artistName', 'artistFrigana'
     ];
 
     /* 追伸 */
