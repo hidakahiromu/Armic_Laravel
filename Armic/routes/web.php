@@ -13,38 +13,43 @@ use Illuminate\Http\Request;
 |
 */
 /*toppage*/
+/*return view('toppage')*/
+Route::resource('/', 'viewControllers\routesController');
 
-Route::get('/', function () {
-    return view('toppage');
-});
 /*投稿された動画*/
-Route::get('/postmovie', function () {
-    return view('musiclist/Post_Page');
-});
+/*return view('musiclist/Post_Page');*/
+Route::get('/postmovie', 'viewControllers\musiclist_Post_PageController@index');
 
 /*動画詳細*/
-Route::get('/postmovie/in', function () {
+/*return view('musiclist/playmusic/post-in')*/
+Route::get('/postmovie/in', 'viewControllers\musiclist_Post_PageController@index2');
+/*Route::get('/postmovie/in', function () {
     return view('musiclist/playmusic/post-in');
-});
+});/
 
-/*イベント*/
-Route::get('/event', function () {
-    return view('eventlist/eventlist');
-});
 
-Route::get('/mypage', function () {
-    return view('mypage.Mypage');
-});
-Route::get('/mypage/Delete', function () {
-    return view('mypage.Mypage_Delete');
-});
+/*return view('eventlist/eventlist')*/
+Route::get('/event', 'EventController@index');
 
-Route::get('/mypage/Musicpost', function () {
-    return view('mypage.Mypage_Music');
-});
-Route::get('/mypage/artistname', function () {
-    return view('mypage.MypageConfig');
-});
+
+/*Route::resource('/event', 'EventController');*/
+Route::resource('/event/eventRegistration', 'EventRegistrationController');
+
+/*return view('artistlist/artistlist')*/
+Route::resource('/artistlist', 'viewControllers\artistlistController');
+
+
+/*return view('mypage.Mypage')*/
+Route::get('/mypage', 'viewControllers\mypageController@index');
+
+/*return view('mypage.Mypage_Delete')*/
+Route::get('/mypage/Delete', 'viewControllers\mypageController@index2');
+
+/*return view('mypage.Mypage_Music')*/
+Route::get('/mypage/Musicpost', 'viewControllers\mypageController@index3');
+
+/* return view('mypage.MypageConfig')*/
+Route::get('/mypage/artistname', 'viewControllers\mypageController@index4');
 
 /*アーティスト関連*/
 Route::get('/artistlist', function () {
@@ -55,21 +60,17 @@ Route::get('/artistlist/artistlistRegistration', 'artistlistRegistrationControll
 Route::post('/artistlist/artistlistFinish', 'artistlistRegistrationController@create');
 /*Route::post('/artistlist/artistlistRegistration', 'artistlistRegistrationController@create');*/
 /* other(Q&Aとか利用規約とか)*/
-Route::get('/q&a', function () {
-    return view('other/q&a');
-});
-Route::get('/terms', function () {
-    return view('other/terms');
-});
+/*return view('other/q&a')*/
+Route::resource('/q&a', 'viewControllers\q_aController');
 
+/*return view('other/terms')*/
+Route::resource('/terms', 'viewControllers\termsController');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/event', 'EventController@index')->name('event');
 
-Route::resource('/event/eventRegistration', 'EventRegistrationController');
 
 
 /*
