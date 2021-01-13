@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class EventRegistrationController extends Controller
 {
     /**
@@ -21,9 +22,25 @@ class EventRegistrationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(array $data)
     {
-        //
+        // $event = new event;
+        // $event->
+        // $event->save();
+        return Event::create([
+           'name' => $data['name'],
+           'phone_number' => $data['phone_number'],
+           'event_name' => $data['event_name'],
+           'event_day' => $data['event_day'],
+           'event_venue' => $data['event_venue'],
+           'event_introduction' => $data['event_introduction'],
+           'event_image' => $data['event_image'],
+           'event_fee' => $data['event_fee'],
+           'ticket_where' => $data['ticket_where'],
+           'event_contact' => $data['event_contact'],
+           
+
+        ]);
     }
 
     /**
@@ -34,7 +51,7 @@ class EventRegistrationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         //
     }
 
     /**
