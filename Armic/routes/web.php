@@ -29,9 +29,6 @@ Route::get('/postmovie/in', function () {
 Route::get('/event', function () {
     return view('eventlist/eventlist');
 });
-Route::get('/artistlist', function () {
-    return view('artistlist/artistlist');
-});
 
 Route::get('/mypage', function () {
     return view('mypage.Mypage');
@@ -45,6 +42,15 @@ Route::get('/mypage/Musicpost', function () {
 });
 Route::get('/mypage/artistname', function () {
     return view('mypage.MypageConfig');
+});
+
+/*アーティスト関連*/
+Route::get('/artistlist', function () {
+    return view('artistlist/artistlist');
+});
+
+Route::get('/artistlist/artistlistRegistration',function(){
+    return view('/artistlist/artistlistRegistration');
 });
 
 /* other(Q&Aとか利用規約とか)*/
