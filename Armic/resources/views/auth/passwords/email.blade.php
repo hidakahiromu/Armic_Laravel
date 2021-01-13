@@ -1,8 +1,7 @@
 <head>
     <link rel="stylesheet" href="{{ asset('css/Registration/Rogu.css') }}">
-    <link rel="stylesheet" href="../css/app.css">
 </head>
-@extends('layouts.app-2')
+@extends('layouts.app')
 
 @section('content')
 <div class="container">

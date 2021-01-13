@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Http\Request;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,9 +27,10 @@ Route::get('/postmovie/in', 'viewControllers\musiclist_Post_PageController@index
     return view('musiclist/playmusic/post-in');
 });/
 
-/*イベント*/
+
 /*return view('eventlist/eventlist')*/
 Route::get('/event', 'EventController@index');
+
 
 /*Route::resource('/event', 'EventController');*/
 Route::resource('/event/eventRegistration', 'EventRegistrationController');
@@ -48,6 +51,14 @@ Route::get('/mypage/Musicpost', 'viewControllers\mypageController@index3');
 /* return view('mypage.MypageConfig')*/
 Route::get('/mypage/artistname', 'viewControllers\mypageController@index4');
 
+/*アーティスト関連*/
+Route::get('/artistlist', function () {
+    return view('artistlist/artistlist');
+});
+
+Route::get('/artistlist/artistlistRegistration', 'artistlistRegistrationController@index');
+Route::post('/artistlist/artistlistFinish', 'artistlistRegistrationController@create');
+/*Route::post('/artistlist/artistlistRegistration', 'artistlistRegistrationController@create');*/
 /* other(Q&Aとか利用規約とか)*/
 /*return view('other/q&a')*/
 Route::resource('/q&a', 'viewControllers\q_aController');

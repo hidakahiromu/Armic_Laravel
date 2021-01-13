@@ -151,4 +151,19 @@
       }
   
   
-  
+
+/* アーティスト新規登録ボタン(イベントから借りてきただけ) */
+.new_create{
+  margin-left: 80%;
+  border-bottom: 5px solid;
+  background-color:#ffffff;
+  display:inline-block;
+  vertical-align:top;
+  border: solid 3px  #00BCD4;
+}
+.new_create a{
+  color: black;
+}
+.new_create a :hover{
+  text-decoration: underline;
+}
