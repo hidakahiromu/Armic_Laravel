@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\viewControllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\UserMusic;
 use Illuminate\Http\Request;
 
 class artistlistController extends Controller
@@ -14,7 +15,8 @@ class artistlistController extends Controller
      */
     public function index()
     {
-        return view('artistlist/artistlist');
+        $user = UserMusic::all();
+        return view('artistlist/artistlist')->with('user',$user);;
     }
 
     /**

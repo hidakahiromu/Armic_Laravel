@@ -34,8 +34,6 @@ Route::get('/event', 'EventController@index');
 /*Route::resource('/event', 'EventController');*/
 Route::resource('/event/eventRegistration', 'EventRegistrationController');
 
-/*return view('artistlist/artistlist')*/
-Route::get('/artistlist', 'viewControllers\artistlistController@index');
 
 /*マイページ*/
 /*return view('mypage.Mypage')*/
@@ -51,6 +49,9 @@ Route::get('/mypage/Musicpost', 'viewControllers\mypageController@index3');
 Route::get('/mypage/artistname', 'viewControllers\mypageController@index4');
 
 /*アーティスト関連*/
+/*return view('artistlist/artistlist')*/
+Route::get('/artistlist', 'viewControllers\artistlistController@index');
+
 Route::get('/artistlist/artistlistRegistration', 'artistlistRegistrationController@index');
 
 Route::post('/artistlist/artistlistFinish', 'artistlistRegistrationController@create');
