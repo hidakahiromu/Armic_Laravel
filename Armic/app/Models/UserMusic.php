@@ -8,6 +8,6 @@ class UserMusic extends Model
 {
     protected $primaryKey = 'userID';
     protected $fillable = [
-        'artistName','artistFrigana'
+       'userID' , 'artistName','artistFrigana'
     ];
 }

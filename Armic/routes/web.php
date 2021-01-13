@@ -49,9 +49,9 @@ Route::get('/artistlist', function () {
     return view('artistlist/artistlist');
 });
 
-Route::get('/artistlist/artistlistRegistration',function(){
-    return view('/artistlist/artistlistRegistration');
-});
+Route::get('/artistlist/artistlistRegistration' , 'artistlistRegistrationController@index');
+
+Route::post('/artistlist/artistlistRegistration/create' , 'artistlistRegistrationController@create');
 
 /* other(Q&Aとか利用規約とか)*/
 Route::get('/q&a', function () {
