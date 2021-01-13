@@ -9,7 +9,8 @@
 <div class="form-wrapper">
     <h2>アーティスト登録</h2>
     <!-- アーティスト新規登録 -->
-    <form method="POST" action="/artistlist/artistlistRegistration/create">
+    <form method="POST" action="/artistlist/artistlistFinish">
+    @csrf
         <!-- userID -->
         <div class="form-item">
             <label for="userID"></label>

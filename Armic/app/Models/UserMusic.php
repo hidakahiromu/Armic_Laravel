@@ -10,4 +10,7 @@ class UserMusic extends Model
     protected $fillable = [
        'userID' , 'artistName','artistFrigana'
     ];
+
+    /* 追伸 */
+    public $timestamps = false;
 }

@@ -51,7 +51,7 @@ Route::get('/artistlist', function () {
 
 Route::get('/artistlist/artistlistRegistration' , 'artistlistRegistrationController@index');
 
-Route::post('/artistlist/artistlistRegistration/create' , 'artistlistRegistrationController@create');
+Route::post('/artistlist/artistlistFinish' , 'artistlistRegistrationController@create');
 
 /* other(Q&Aとか利用規約とか)*/
 Route::get('/q&a', function () {

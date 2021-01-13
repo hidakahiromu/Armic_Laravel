@@ -9,19 +9,13 @@ use Illuminate\Support\Facades\Validator;
 
 class artistlistRegistrationController extends Controller
 {
-    public function index()
-    {
+    public function index(){
         return view('/artistlist/artistlistRegistration');
     }
     
-    protected function create(array $data)
+    protected function create(Request $request)
     {
-        UserMusic::create([
-            'userID' => $data['userID'],
-            'artistName' => $data['artistName'],
-            'artistFrigana' => $data['artistFrigana'],
-        ]);
-        return view('/artistlist/artistlistRegistration');
+        $data = $request->all();
+        return view('artistlist/artistlistFinish');
     }
-    
 }
