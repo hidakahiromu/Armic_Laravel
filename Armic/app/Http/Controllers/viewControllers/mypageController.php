@@ -16,6 +16,20 @@ class mypageController extends Controller
     {
         return view('mypage.Mypage');
     }
+    public function index2()
+    {
+        return view('mypage.Mypage_Delete');
+    }
+    public function index3()
+    {
+        return view('mypage.Mypage_Music');
+    }
+    public function index4()
+    {
+        return view('mypage.MypageConfig');
+    }
+
+
 
     /**
      * Show the form for creating a new resource.

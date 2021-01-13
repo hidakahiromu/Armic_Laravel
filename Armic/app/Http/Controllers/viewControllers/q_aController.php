@@ -5,7 +5,7 @@ namespace App\Http\Controllers\viewControllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class mypage_DeleteController extends Controller
+class q_aController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class mypage_DeleteController extends Controller
      */
     public function index()
     {
-        return view('mypage.Mypage_Delete');
+        return view('other/q&a');
     }
 
     /**

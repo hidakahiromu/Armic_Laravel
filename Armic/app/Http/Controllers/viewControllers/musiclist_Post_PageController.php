@@ -16,6 +16,10 @@ class musiclist_Post_PageController extends Controller
     {
         return view('musiclist/Post_Page');
     }
+    public function index2()
+    {
+        return view('musiclist/playmusic/post-in');
+    }
 
     /**
      * Show the form for creating a new resource.
