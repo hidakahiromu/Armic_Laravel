@@ -92,7 +92,7 @@
             ・料金<a id="mandatory">必須</a>
             <div class="form-event">
                 <label for="event_fee"></label>
-                <input type="text" name="event_fee" required="required" placeholder="無料の場合は「無料」と入力してください"></input>
+                <input type="text" name="event_fee" required="required" placeholder="無料の場合は「0」と入力してください"></input>
             </div>
 
             <!--フォーム要素10(チケットのお求め先)-->
