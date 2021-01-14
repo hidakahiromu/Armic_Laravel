@@ -43,7 +43,7 @@ class EventRegistrationController extends Controller
         
         $post->save();
                 
-        return view('/eventlist/eventregistration');
+        return view('/eventlist/eventlist');
         
 
     }
