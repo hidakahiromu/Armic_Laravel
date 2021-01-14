@@ -14,11 +14,6 @@ class postController extends Controller
         //return view('');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
 
     protected function create(Request $request)
     {
@@ -36,6 +31,7 @@ class postController extends Controller
         // インスタンスの状態をデータベースに書き込む
         $post->save();
         //「投稿する」をクリックしたら投稿情報表示ページへリダイレクト        
-        return view('');
-        }
+        /* return view('mypage.Mypage');*/
+        return view('/artistlist/artistlistFinish');
+    }
 }

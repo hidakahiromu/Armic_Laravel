@@ -25,7 +25,6 @@ Route::get('/postmovie', 'viewControllers\musiclist_Post_PageController@index');
 /*return view('musiclist/playmusic/post-in')*/
 Route::get('/postmovie/in', 'viewControllers\musiclist_Post_PageController@index2');
 
-Route::post('/mypage', 'postController@create');
 
 
 
@@ -42,6 +41,7 @@ Route::get('/artistlist', 'viewControllers\artistlistController@index');
 /*マイページ*/
 /*return view('mypage.Mypage')*/
 Route::get('/mypage', 'viewControllers\mypageController@index');
+Route::post('/mypage/finish', 'postController@create');
 
 /*return view('mypage.Mypage_Delete')*/
 Route::get('/mypage/Delete', 'viewControllers\mypageController@index2');

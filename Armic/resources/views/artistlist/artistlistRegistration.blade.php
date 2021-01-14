@@ -10,7 +10,7 @@
     <h2>アーティスト登録</h2>
     <!-- アーティスト新規登録 -->
     <form method="POST" action="/artistlist/artistlistFinish">
-    @csrf
+        @csrf
         <!-- userID -->
         <div class="form-item">
             <label for="userID"></label>
@@ -33,8 +33,8 @@
         <div class="button-panel">
             <input type="submit" class="button" title="create_artist" value="登録"></input>
         </div>
-    </from>
+        </from>
 
 
 
-@endsection
+        @endsection
