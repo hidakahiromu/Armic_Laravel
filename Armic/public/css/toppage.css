@@ -23,8 +23,61 @@ body {
 	padding-inline-start: 0px;
 	}
 
+/*ヘッダ-----------------------------------------------*/
+ 
+header{
+  top: 0px;/*画面topからの距離*/
+  width: 100%;/*サイドの幅*/
+  height: 68px;/*ヘッダの上下幅*/
+  background-color: white;/*色*/
+  z-index: 9999;
+  position: fixed;/*ヘッダ固定*/
+  }
+  .header-ul{
+  display: flex;/*header直下の子要素のレイアウトをコントロール*/
+  align-items :center; /*要素の縦方向の位置　center＝中心*/
+  margin:auto ;
+  }
+   
+	.header_logo {
+        text-align: center;   
+    }
+  .header_list{
+        list-style:none;
+        overflow: hidden;
+        text-align: center;
+        float: left;
+        margin: auto;
+    }
+    .header_list a{
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+    }
+ 
+    .header_list li{
+        margin: 0;
+        width:120px;
+        text-align: center;
+        float: left;
+        list-style: none;
+    }
 
-  
+ /*大見出し*/
+    .Heading{
+      font-size: 25px;
+      background:white;
+      height: 40px;
+      padding: 10px ;
+      text-align : center;
+      margin: 0 50px 0 50px;
+    }
+  /*ジャンプポジション*/
+  .JpPoji{
+    padding-top: 68px;
+    margin-top:-68px;
+  }
+    
 /*スライドショー*/
     .slideshow {
 	    position: relative;
@@ -40,12 +93,13 @@ body {
 	   display: flex; 
 	   position: relative;
 	   width: 500%;
-	   background: white;
+	   background: rebeccapurple;
 	   text-align: center;
 	   -webkit-user-select: none;
 	   user-select: none;
 	   transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
+    
+     }
     .slideContents section {
 	   width: 20%;
     }
@@ -79,7 +133,7 @@ body {
     .arrow,
     .arrow label {
 	   cursor: pointer;
-	   width: 50px;
+	   width: 200px;
 	   height: 100%;
     }
     .arrow label {
@@ -143,9 +197,7 @@ body {
     #switch5:checked ~ .prev label[for="switch4"],
     #switch1:checked ~ .next label[for="switch2"],
     #switch2:checked ~ .next label[for="switch3"],
-    #switch3:checked ~ .next label[for="switch4"],
-    #switch4:checked ~ .next label[for="switch5"],
-    #switch5:checked ~ .next label[for="switch1"] {
+    #switch3:checked ~ .next label[for="switch1"] {
 	   pointer-events: auto;
     }
 
@@ -156,7 +208,9 @@ body {
     @media screen and (min-width: 1041px) {
       .slides {
         width: auto;
-        height: 485px; } }
+        height: 650px;
+      }
+     }
 
 
 /*アイコン横並びスクロール*/
@@ -172,7 +226,7 @@ body {
       margin: 0 70px 0 70px;
       font-size: 15px;
       background:white;
-      height: 25px;
+      height: 50px;
     }
 
 /* 画面幅が768px以上の場合、横スクロールを解除 */
@@ -205,7 +259,8 @@ body {
 
     /* 順位 */
     .rank li {
-	   counter-increment: rank; 
+     counter-increment: rank; 
+     width: 300px;
 	}
     .rank li::before {
        content: counter(rank) "位";
@@ -218,10 +273,10 @@ body {
     .bandname{
        color: #bf0000;
        line-height: 1.65;
-       font-size: 13px;
-	   margin-top: 4px; 
-	}
-	
+       font-size: 15px;
+	     margin-top: 4px; 
+  }
+  	
 /*称号*/
  /*殿堂入り*/
     .bandname span.Fame::before {
@@ -229,7 +284,7 @@ body {
     display: inline-block;
     background:  blue;
     color: #fff ;
-    font-size: .45em;
+    font-size: .9em;
     line-height: 1.25;
     vertical-align: middle;
     box-sizing: border-box;
@@ -239,9 +294,9 @@ body {
    .bandname span.rookie::before {
       content: 'ルーキー';
       display: inline-block;
-      background:  #bf0000;
+      background: red;
       color: #fff ;
-      font-size: .45em;
+      font-size: .9em;
       line-height: 1.25;
       vertical-align: middle;
       box-sizing: border-box;
@@ -250,7 +305,7 @@ body {
 
     /*字の大きさ*/
     .bandname small {
-	   font-size: .45em;
+	   font-size: .9em;
 	   color: #000;
 	   margin-right: .5em; 
   }
@@ -260,7 +315,7 @@ body {
     
   }
   .img{
-    z-index: 1;
+    z-index: 20;
   }
 	/* アー写がない人たち */
     .rank a {
@@ -573,8 +628,7 @@ body {
     text-align: right;
   }
 }
-
-
+  
 
 
 /*利用規約*/

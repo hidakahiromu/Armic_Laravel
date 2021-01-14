@@ -28,7 +28,8 @@ class artistlistRegistrationController extends Controller
         // インスタンスの状態をデータベースに書き込む
         $post->save();
         //「投稿する」をクリックしたら投稿情報表示ページへリダイレクト        
-        return view('/artistlist/artistlistFinish');
+        $user = UserMusic::all();
+        return view('artistlist/artistlist')->with('user',$user);;
         /*redirect()->route('posts.detail', [
             'id' => $post->id,
         ]);*/
