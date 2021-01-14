@@ -16,12 +16,9 @@ class CreatePostTable extends Migration
         if (!Schema::hasTable('post')) {
             Schema::create('post', function (Blueprint $table) {
                 $table->string('userID');
-                $table->string('artistName');
-                $table->string('artistFrigana');
                 $table->string('title');
                 $table->string('URL');//youtubeのリンク
                 $table->string('profile');//作品の説明文
-                $table->timestamps();
             });
         }
     }
