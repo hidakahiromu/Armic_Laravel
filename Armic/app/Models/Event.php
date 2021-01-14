@@ -12,6 +12,6 @@ class Event extends Model
 
     protected $primarykey='event_name';
 
-    
+    public $timestamps = false;
 }
 

@@ -23,6 +23,7 @@
 
         <!--↓action = ""送信先 　method = "post"送信形式?URLに送信内容を表示させない（get内容を表示する）-->
         <form action="" method="post"　>
+            @csrf
             <a id="item">■依頼者情報 &emsp; ※一般には非公開です</a>
             <!--フォーム要素1(名前)-->
             ・名前<a id="mandatory">必須</a>
@@ -105,9 +106,17 @@
 
              <!--フォーム要素11(イベントのお問い合わせ先)-->
              ・お問い合わせ先<a id="mandatory">必須</a>
-             <div class="form-event">
+            <div class="form-event">
                 <label for="event_contact"></label>
                 <textarea name="event_contact" cols="50" rows="3" required="required" placeholder="(例) 000-0000-0000(担当：神戸太郎)aaa@aa.com"></textarea>
+            </div>
+
+            <div class="form-group row mb-0">
+                <div class="col-md-6 offset-md-4">
+                  <div class="button-panel">
+                    <input type="submit" class="button" title="Sign In" value="イベントを投稿"></input>
+                  </div>
+                </div>
             </div>
             
         </from>

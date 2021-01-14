@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Event;
+use App\Http\Controllers\Controller;
 
 
 class EventRegistrationController extends Controller
@@ -22,25 +24,28 @@ class EventRegistrationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(array $data)
+    public function create(Request $request)
     {
-        // $event = new event;
-        // $event->
-        // $event->save();
-        return Event::create([
-           'name' => $data['name'],
-           'phone_number' => $data['phone_number'],
-           'event_name' => $data['event_name'],
-           'event_day' => $data['event_day'],
-           'event_venue' => $data['event_venue'],
-           'event_introduction' => $data['event_introduction'],
-           'event_image' => $data['event_image'],
-           'event_fee' => $data['event_fee'],
-           'ticket_where' => $data['ticket_where'],
-           'event_contact' => $data['event_contact'],
-           
+        // Postモデルのインスタンスを作成する
+        $post = new Event();
+        
+        $post->name = $request->name;
+        $post->phone_number = $request->phone_number;
+        $post->event_name = $request->event_name;
+        $post->event_day = $request->event_day;
+        $post->event_venue = $request->event_venue;
+        $post->event_introduction = $request->event_introduction;
+        $post->event_image = $request->event_image;
+        $post->event_fee = $request->event_fee;
+        $post->ticket_where = $request->ticket_where;
+        $post->event_contact = $request->event_contact;
 
-        ]);
+        
+        $post->save();
+                
+        return view('/eventlist/eventlist');
+        
+
     }
 
     /**

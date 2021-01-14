@@ -57,9 +57,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/event', 'EventController@index')->name('event');
 
-Route::resource('/event/eventRegistration', 'EventRegistrationController');
-
-
+//Route::resource('/event/eventRegistration', 'EventRegistrationController');
+Route::get('/event/eventRegistration', 'EventRegistrationController@index');
+Route::post('/event/eventRegistration', 'EventRegistrationController@create');
 /*
 Route::get('/', function () {
     return view('welcome');
