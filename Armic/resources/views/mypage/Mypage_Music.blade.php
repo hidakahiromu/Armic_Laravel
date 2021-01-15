@@ -21,7 +21,7 @@
             <br><br><br>
 
             <!--↓action = ""送信先 　method = "post"送信形式?URLに送信内容を表示させない（get内容を表示する）-->
-            <form action="/mypage/finish" method="POST" 　>
+            <form action="/mypage" method="POST" 　>
                 <div>
                     @csrf
                     <div class="MyPageConfig_form-event">
