@@ -23,7 +23,7 @@ Route::get('/postmovie', 'viewControllers\musiclist_Post_PageController@index');
 
 /*動画詳細*/
 /*return view('musiclist/playmusic/post-in')*/
-Route::get('/postmovie/in', 'viewControllers\musiclist_Post_PageController@index2');
+Route::post('/postmovie/in', 'viewControllers\musiclist_Post_PageController@index2');
 
 
 

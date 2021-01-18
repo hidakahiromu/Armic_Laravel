@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     protected $table = 'post';
-    protected $primaryKey = 'userID';
     protected $fillable = [
         'userID', 'title', 'URL', 'profile'
     ];

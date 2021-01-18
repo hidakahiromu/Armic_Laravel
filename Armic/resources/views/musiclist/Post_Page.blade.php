@@ -25,10 +25,6 @@ $cnt2 = 1;
       if ($cnt2 > 4) {
         goto a;
       }
-
-
-
-
       echo '<ul class="post_group_$cnt2">
              <li calss="post_list_$cnt">
             <nobr><iframe width="320" height="180" src=" '; ?>
@@ -37,26 +33,27 @@ $cnt2 = 1;
       <?php echo ' " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></nobr>
       </li>
       <li calss="post_element_$cnt">
-        <a href="/postmovie/in" title="詳細">
-        <form method="POST" action="/postmovie/in">
-        <input type="hidden" name="URL" value="'; ?>{{ $event->URL}}<?php echo '">
-        <input type="hidden" name="title" value="'; ?>{{ $event->title}}<?php echo '">
-        <input type="hidden" name="profile" value="'; ?>{{ $event->profile}}<?php echo '">
-        </form>
-          <nobr>'; ?>
+      <form method="POST" action="/postmovie/in" name="LOGIN">' ?>@csrf<?php echo '
+      <input type="hidden" name="URL" value="'; ?>{{ $event->URL}}<?php echo '">
+      <input type="hidden" name="title" value="'; ?>{{ $event->title}}<?php echo '">
+      <input type="hidden" name="profile" value="'; ?>{{ $event->profile}}<?php echo '">
+      <input type="submit" value="'; ?>
 
       {{ $event->title}}
-      <?php echo ' </nobr>
-      </a><br>
-      <a href="アーティストページのlink" title="アーティスト">アーティスト</a><br><br><br>
+      <?php echo ' ">
+      </form>
+    
+      <br>
+      <a href="アーティストページのlink" title="アーティスト">'; ?>{{ $event->userID}}<?php echo '</a><br><br><br>
+     
+      
       <p>☆☆☆☆☆()</p>
       <p>viewers:</p>
+     
       <p>タグ、カテゴリ</p>
       </li>
       <ul>';
-      a:
-
-      ?>
+                                                                      a: ?>
       @if ($cnt2>4)
       @break
       @endif
