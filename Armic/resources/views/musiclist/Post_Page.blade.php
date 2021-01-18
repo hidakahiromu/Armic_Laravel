@@ -38,6 +38,11 @@ $cnt2 = 1;
       </li>
       <li calss="post_element_$cnt">
         <a href="/postmovie/in" title="詳細">
+        <form method="POST" action="/postmovie/in">
+        <input type="hidden" name="URL" value="'; ?>{{ $event->URL}}<?php echo '">
+        <input type="hidden" name="title" value="'; ?>{{ $event->title}}<?php echo '">
+        <input type="hidden" name="profile" value="'; ?>{{ $event->profile}}<?php echo '">
+        </form>
           <nobr>'; ?>
 
       {{ $event->title}}

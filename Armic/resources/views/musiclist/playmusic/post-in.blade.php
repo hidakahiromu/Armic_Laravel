@@ -7,7 +7,7 @@
 @section('content')
 
 <!--動画-->
-<h1 class="Post-Title">[Special] 마마무(MAMAMOO) - HIP Performance Video</h1>
+<h1 class="Post-Title"><?php echo $_POST['title'];?></h1>
 <div class="Post-Movie">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/CH27pelftXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <!-- 視聴数 -->
