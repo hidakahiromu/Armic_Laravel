@@ -35,11 +35,27 @@ class EventRegistrationController extends Controller
         $post->event_day = $request->event_day;
         $post->event_venue = $request->event_venue;
         $post->event_introduction = $request->event_introduction;
-        $post->event_image = $request->event_image;
+
+
+        $image = $request->file('event_image')->store('public/image');
+
+        #この下に追加する
+
+        // $image = str_replace('public/image/', '', $image);
+
+        // $image = new Event;
+        // $image->file = $image;
+
+        $image->save();
+
+        //$post->event_image = $request->event_image;
+        
+        
         $post->event_fee = $request->event_fee;
         $post->ticket_where = $request->ticket_where;
         $post->event_contact = $request->event_contact;
 
+        
         
         $post->save();
                 
