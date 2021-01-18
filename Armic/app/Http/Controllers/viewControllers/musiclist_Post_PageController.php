@@ -4,6 +4,7 @@ namespace App\Http\Controllers\viewControllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Post;
 
 class musiclist_Post_PageController extends Controller
 {
@@ -14,7 +15,9 @@ class musiclist_Post_PageController extends Controller
      */
     public function index()
     {
-        return view('musiclist/Post_Page');
+        $date = Post::all();
+
+        return view('musiclist/Post_Page')->with('date', $date);
     }
     public function index2()
     {
