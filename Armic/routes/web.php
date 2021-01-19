@@ -17,13 +17,18 @@ use Illuminate\Http\Request;
 
 Route::resource('/', 'viewControllers\routesController');
 
+Route::get('/tutorial', function () {
+    return view('Tutorial');
+});
+
 /*投稿された動画*/
 /*return view('musiclist/Post_Page');*/
 Route::get('/postmovie', 'viewControllers\musiclist_Post_PageController@index');
 
 /*動画詳細*/
 /*return view('musiclist/playmusic/post-in')*/
-Route::get('/postmovie/in', 'viewControllers\musiclist_Post_PageController@index2');
+Route::post('/postmovie/in', 'viewControllers\musiclist_Post_PageController@index2');
+
 
 
 
@@ -38,6 +43,7 @@ Route::resource('/event/eventRegistration', 'EventRegistrationController');
 /*マイページ*/
 /*return view('mypage.Mypage')*/
 Route::get('/mypage', 'viewControllers\mypageController@index');
+Route::post('/mypage', 'postController@create');
 
 /*return view('mypage.Mypage_Delete')*/
 Route::get('/mypage/Delete', 'viewControllers\mypageController@index2');

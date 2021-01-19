@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\viewControllers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+//use Illuminate\Http\Request;
+use App\Models\Post;
+use Request;
 
 class musiclist_Post_PageController extends Controller
 {
@@ -14,11 +16,15 @@ class musiclist_Post_PageController extends Controller
      */
     public function index()
     {
-        return view('musiclist/Post_Page');
+        $date = Post::all();
+
+        return view('musiclist/Post_Page')->with('date', $date);
     }
-    public function index2()
+    public function index2(Request $moji)
     {
-        return view('musiclist/playmusic/post-in');
+
+        $data1 = $moji::all();
+        return view('musiclist/playmusic/post-in', compact('data1'));
     }
 
     /**

@@ -33,8 +33,8 @@
         <div class="button-panel">
             <input type="submit" class="button" title="create_artist" value="登録"></input>
         </div>
-    </from>
+        </from>
 
 
 
-@endsection
+        @endsection

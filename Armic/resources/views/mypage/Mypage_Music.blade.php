@@ -21,28 +21,36 @@
             <br><br><br>
 
             <!--↓action = ""送信先 　method = "post"送信形式?URLに送信内容を表示させない（get内容を表示する）-->
-            <form action="" method="post" 　>
+            <form action="/mypage" method="POST" 　>
                 <div>
+                    @csrf
+                    <div class="MyPageConfig_form-event">
+                        <p>userID
+                        <p>
+                            <label for="title"></label>
+                            <input type="text" name="userID" required="required" <!--placeholder="名前" --></input>
+                            <br><br><br>
+                    </div>
                     <div class="MyPageConfig_form-event">
                         <p>音楽名
                         <p>
-                            <label for="name"></label>
-                            <input type="name" name="name" required="required" <!--placeholder="名前" --></input>
+                            <label for="title"></label>
+                            <input type="text" name="title" required="required" <!--placeholder="名前" --></input>
                             <br><br><br>
                     </div>
                     <div class="MyPageConfig_form-event">
                         <p>音楽のリンク (音楽をyoutubeに投稿し,youtubeの動画リンクを記入してください.)
                         <p>
-                            <label for="name"></label>
-                            <input type="name" name="name" required="required" <!--placeholder="名前" --></input>
+                            <label for="URL"></label>
+                            <input type="text" name="URL" required="required" <!--placeholder="名前" --></input>
                             <br><br><br>
                     </div>
                     <div class="MyPageConfig_form-event">
                         <p>コメント
                         <p>
                         <div class="MyPageConfig_form-event">
-                            <label for="event_introduction"></label>
-                            <textarea name="event_introduction" cols="100" rows="5" required="required" <!--placeholder="イベント紹介文" --></textarea>
+                            <label for="profile"></label>
+                            <textarea name="profile" cols="100" rows="5" required="required" <!--placeholder="イベント紹介文" --></textarea>
                         </div>
                         <br><br><br>
                     </div>
@@ -50,10 +58,7 @@
 
                     <div class=Mypage_post_button_fream>
                         <div class=Mypage_post_button_rightfream>
-                            <a href="/mypage">
-                                <button class="Mypage_Config_rightbutton" type="button" style="width:100%;height:100%">
-                                    <p>投稿</p>
-                                </button></a>
+                            <input type="submit" class="button Mypage_Config_rightbutton" title="create_artist" value="登録" style="width:100%;height:100%"></input>
                         </div>
                         <div class=Mypage_post_button_leftfream>
                             <a href="/mypage">
