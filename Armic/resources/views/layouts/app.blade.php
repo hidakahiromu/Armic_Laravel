@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>ARMIC</title>
-  <link rel="stylesheet" href="../css/app.blade.css">         <!-- 下の階層に言ったときcssが使われない場合../を追加してください-->
+  <link rel="stylesheet" href="../css/app.blade.css"> <!-- 下の階層に言ったときcssが使われない場合../を追加してください-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
   <link rel="icon" type="image/x-icon" href="../image/armicicon.png">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
       <!--左の要素-->
       <ul class="header_list  ulul">
         <li><a>
-            <nobr><a class="nav-link">ARMICについて</a></nobr>
+            <nobr><a href="/tutorial" class="nav-link">ARMICについて</a></nobr>
           </a></li>
         <li><a href="/postmovie">
             <nobr>投稿ページ</nobr>
@@ -31,7 +31,7 @@
       </ul>
       <!--ロゴ-->
       <h1 class="header_logo"><a href="/" 　title="ARMIC">
-          <img src="../image/armic.png" width="200" height="68px"></a>      <!-- 下の階層に言ったとき画像が使われない場合../を追加してください-->
+          <img src="../image/armic.png" width="200" height="68px"></a> <!-- 下の階層に言ったとき画像が使われない場合../を追加してください-->
       </h1>
       <!--右の要素-->
       <ul class="header_list header_list2 ulul">

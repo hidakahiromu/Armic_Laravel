@@ -17,6 +17,10 @@ use Illuminate\Http\Request;
 
 Route::resource('/', 'viewControllers\routesController');
 
+Route::get('/tutorial', function () {
+    return view('Tutorial');
+});
+
 /*投稿された動画*/
 /*return view('musiclist/Post_Page');*/
 Route::get('/postmovie', 'viewControllers\musiclist_Post_PageController@index');
