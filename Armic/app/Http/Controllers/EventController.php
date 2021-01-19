@@ -11,6 +11,6 @@ class EventController extends Controller
     {
         $date = Event::all();
         
-        return view('eventlist/eventlist')->with('date',$date);;
+        return view('eventlist/eventlist')->with('date',$date);
     }
 }

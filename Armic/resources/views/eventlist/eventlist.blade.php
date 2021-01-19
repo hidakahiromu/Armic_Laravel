@@ -14,9 +14,9 @@
     <ul class="horizontal_scroll ">
         <li>
             <span class="nodesize">2021年1月20日開催</span>
-            <a href=""><img src="image/armicicon.png" width="140px" height="80px"></a>
+            <a href=""><img src="../../image/armicicon.png" width="140px" height="80px"></a>
             <div class="drumname">
-                <span><small>NEWS</small></span>
+                <span><small>libru</small></span>
             </div>
         </li>
         <li>
@@ -30,14 +30,14 @@
             <span class="nodesize">2021年1月22日開催</span>
             <a href=""><img src="" width="140px" height="80px"></a>
             <div class="drumname">
-                <span><small>米津玄師</small></span>
+                <span><small>oiler</small></span>
             </div>
         </li>
         <li>
             <span class="nodesize">2021年1月23日開催</span>
             <a href=""><img src="" width="140px" height="80px"></a>
             <div class="drumname">
-                <span><small>あいみょん</small></span>
+                <span><small>caster</small></span>
             </div>
         </li>
         <li>
@@ -60,7 +60,8 @@
 
     @foreach($date as $event)
         <div class="event_all">
-            <div class="photo"><img src="" alt=""></div>
+            <div class="photo"><img src="../../image/Drum.jpg" alt=""></div>
+                <!-- {{asset('storage/image/'.$event->file)}} -->
             <div class="details">
                 <div class="category">
                     <p>ライブ</p>

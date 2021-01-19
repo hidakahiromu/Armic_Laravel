@@ -36,19 +36,7 @@ class EventRegistrationController extends Controller
         $post->event_venue = $request->event_venue;
         $post->event_introduction = $request->event_introduction;
 
-
-        $image = $request->file('event_image')->store('public/image');
-
-        #この下に追加する
-
-        // $image = str_replace('public/image/', '', $image);
-
-        // $image = new Event;
-        // $image->file = $image;
-
-        $image->save();
-
-        //$post->event_image = $request->event_image;
+        $post->event_image = $request->event_image;
         
         
         $post->event_fee = $request->event_fee;
@@ -58,8 +46,10 @@ class EventRegistrationController extends Controller
         
         
         $post->save();
+
+        $date = Event::all();
                 
-        return view('/eventlist/eventlist');
+        return view('/eventlist/eventlist')->with('date',$date);
         
 
     }
@@ -72,7 +62,16 @@ class EventRegistrationController extends Controller
      */
     public function store(Request $request)
     {
-         //
+        $image = $request->file('event_image')->store('public/image');
+
+        #この下に追加する
+
+        $image = str_replace('public/image/', '', $image);
+
+        $image = new Event;
+        $image->file = $image;
+
+        $image->save();
     }
 
     /**
