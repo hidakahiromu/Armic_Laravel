@@ -1,6 +1,17 @@
 /*動画タイトル*/
+.body{
+    
+  color: #5e5e5e;
+  margin: 5px 100px 13px 100px;
+  padding: 10px 90px 100px 90px;
+  background-color: white;
+ 
+
+}
+
 .Post-Title{
   padding: 30px;
+  color:white ;
 }
 
 

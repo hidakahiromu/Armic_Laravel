@@ -32,12 +32,12 @@ $cnt2 = 1;
 
       <?php echo ' " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></nobr>
       </li>
-      <li calss="post_element_$cnt">
+      <li class="post_element_$cnt">
       <form method="POST" action="/postmovie/in" name="LOGIN">' ?>@csrf<?php echo '
       <input type="hidden" name="URL" value="'; ?>{{ $event->URL}}<?php echo '">
       <input type="hidden" name="title" value="'; ?>{{ $event->title}}<?php echo '">
       <input type="hidden" name="profile" value="'; ?>{{ $event->profile}}<?php echo '">
-      <input type="submit" value="'; ?>
+      <input class="post_element_value" type="submit" value="'; ?>
 
       {{ $event->title}}
       <?php echo ' ">

@@ -3,8 +3,11 @@
 
 /* body */
 .body{
-    background: #e9e9e9;
+    
     color: #5e5e5e;
+    margin: 5px 100px 13px 100px;
+    padding: 10px 90px 100px 90px;
+    background-color: white;
     font: 400 87.5%/1.5em 'Open Sans', sans-serif;
   
 }
@@ -45,6 +48,7 @@ ul li:nth-of-type(2),li:nth-of-type(4) {
     opacity: 0.6;
     border-radius: 15px;
 }
+
 #page_top a{
     position: relative;
     display: block;

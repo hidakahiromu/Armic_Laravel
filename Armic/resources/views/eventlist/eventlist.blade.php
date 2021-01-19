@@ -6,7 +6,8 @@
 
 </head>
 
-<?php $cnt=0 ?>
+<?php $cnt = 0 ?>
+
 
 @extends('layouts.app')
 @section('content')
@@ -61,30 +62,29 @@
 <!--イベント新規作成↑-->
 
 
-
-    @foreach($date as $event)   
-    <?php ++$cnt ?>
-        <div class="event_all">
-            <div class="photo"><img src="../../image/{{$cnt}}.jpg" alt="" ></div>
-                <!-- {{asset('storage/image/'.$event->file)}} -->
-            <div class="details">
-                <div class="category">
-                    <p>ライブ</p>
-                </div>
-                <div class=event_title>{{ $event->event_name }}</div>
-                <div class="date">主催 {{$event->name}} 開催場所 {{$event->event_venue}}　<br>開催日時 <span class="day">{{$event->event_day}}</span></div>
-            </div>
-            <div class="description">
-                <h1></h1>
-                <div class="text">
-                    <p>{{$event->event_introduction}}</p>
-                    <a href="#0" class="">詳しく見る</a>
-                </div>
-            </div>
+@foreach($date as $event)
+<?php ++$cnt ?>
+<div class="event_all">
+    <div class="photo"><img src="../../image/{{$cnt}}.jpg" alt=""></div>
+    <!-- {{asset('storage/image/'.$event->file)}} -->
+    <div class="details">
+        <div class="category">
+            <p>ライブ</p>
         </div>
-    
-    @endforeach
-    
+        <div class=event_title>{{ $event->event_name }}</div>
+        <div class="date">主催 {{$event->name}} 開催場所 {{$event->event_venue}}　<br>開催日時 <span class="day">{{$event->event_day}}</span></div>
+    </div>
+    <div class="description">
+        <h1></h1>
+        <div class="text">
+            <p>{{$event->event_introduction}}</p>
+            <a href="#0" class="">詳しく見る</a>
+        </div>
+    </div>
+</div>
+
+@endforeach
+
 <!-- <div class="event_all">
     <div class="photo"><img src="" alt=""></div>
     <div class="details">
