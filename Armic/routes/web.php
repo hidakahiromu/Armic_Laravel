@@ -74,7 +74,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-
+//Route::resource('/event/eventRegistration', 'EventRegistrationController');
+Route::get('/event/eventRegistration', 'EventRegistrationController@index');
+Route::post('/event', 'EventRegistrationController@create');
 
 /*
 Route::get('/', function () {
