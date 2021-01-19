@@ -17,6 +17,7 @@
             @if(mb_substr($a->artistFrigana , 0 , 1) == "ア" or 
                 mb_substr($a->artistFrigana , 0 , 1) == "イ" or
                 mb_substr($a->artistFrigana , 0 , 1) == "ウ" or
+                mb_substr($a->artistFrigana , 0 , 1) == "ヴ" or
                 mb_substr($a->artistFrigana , 0 , 1) == "エ" or
                 mb_substr($a->artistFrigana , 0 , 1) == "オ" )
                 <li><a href="">{{ $a->artistName }}</a></li>
@@ -32,7 +33,12 @@
                 mb_substr($ka->artistFrigana , 0 , 1) == "キ" or
                 mb_substr($ka->artistFrigana , 0 , 1) == "ク" or
                 mb_substr($ka->artistFrigana , 0 , 1) == "ケ" or
-                mb_substr($ka->artistFrigana , 0 , 1) == "コ" )
+                mb_substr($ka->artistFrigana , 0 , 1) == "コ" or
+                mb_substr($ka->artistFrigana , 0 , 1) == "ガ" or 
+                mb_substr($ka->artistFrigana , 0 , 1) == "ギ" or
+                mb_substr($ka->artistFrigana , 0 , 1) == "グ" or
+                mb_substr($ka->artistFrigana , 0 , 1) == "ゲ" or
+                mb_substr($ka->artistFrigana , 0 , 1) == "ゴ" )
                 <li><a href="">{{ $ka->artistName }}</a></li>
             @endif
         @endforeach
@@ -46,7 +52,12 @@
                 mb_substr($sa->artistFrigana , 0 , 1) == "シ" or
                 mb_substr($sa->artistFrigana , 0 , 1) == "ス" or
                 mb_substr($sa->artistFrigana , 0 , 1) == "セ" or
-                mb_substr($sa->artistFrigana , 0 , 1) == "ソ" )
+                mb_substr($sa->artistFrigana , 0 , 1) == "ソ" or
+                mb_substr($sa->artistFrigana , 0 , 1) == "ザ" or 
+                mb_substr($sa->artistFrigana , 0 , 1) == "ジ" or
+                mb_substr($sa->artistFrigana , 0 , 1) == "ズ" or
+                mb_substr($sa->artistFrigana , 0 , 1) == "ゼ" or
+                mb_substr($sa->artistFrigana , 0 , 1) == "ゾ")
                 <li><a href="">{{ $sa->artistName }}</a></li>
             @endif
         @endforeach
@@ -60,7 +71,13 @@
                 mb_substr($ta->artistFrigana , 0 , 1) == "チ" or
                 mb_substr($ta->artistFrigana , 0 , 1) == "ツ" or
                 mb_substr($ta->artistFrigana , 0 , 1) == "テ" or
-                mb_substr($ta->artistFrigana , 0 , 1) == "ト" )
+                mb_substr($ta->artistFrigana , 0 , 1) == "ト" or
+                mb_substr($ta->artistFrigana , 0 , 1) == "ダ" or 
+                mb_substr($ta->artistFrigana , 0 , 1) == "ヂ" or
+                mb_substr($ta->artistFrigana , 0 , 1) == "ヅ" or
+                mb_substr($ta->artistFrigana , 0 , 1) == "デ" or
+                mb_substr($ta->artistFrigana , 0 , 1) == "ド" or
+                mb_substr($ta->artistFrigana , 0 , 1) == "ッ" )
                 <li><a href="">{{ $ta->artistName }}</a></li>
             @endif
         @endforeach
@@ -88,7 +105,12 @@
                 mb_substr($ha->artistFrigana , 0 , 1) == "ヒ" or
                 mb_substr($ha->artistFrigana , 0 , 1) == "フ" or
                 mb_substr($ha->artistFrigana , 0 , 1) == "ヘ" or
-                mb_substr($ha->artistFrigana , 0 , 1) == "ホ" )
+                mb_substr($ha->artistFrigana , 0 , 1) == "ホ" or
+                mb_substr($ha->artistFrigana , 0 , 1) == "バ" or 
+                mb_substr($ha->artistFrigana , 0 , 1) == "ビ" or
+                mb_substr($ha->artistFrigana , 0 , 1) == "ブ" or
+                mb_substr($ha->artistFrigana , 0 , 1) == "ベ" or
+                mb_substr($ha->artistFrigana , 0 , 1) == "ボ" )
                 <li><a href="">{{ $ha->artistName }}</a></li>
             @endif
         @endforeach
@@ -114,7 +136,10 @@
         @foreach ($user as $ya)
             @if(mb_substr($ya->artistFrigana , 0 , 1) == "ヤ" or 
                 mb_substr($ya->artistFrigana , 0 , 1) == "ユ" or
-                mb_substr($ya->artistFrigana , 0 , 1) == "ヨ" )
+                mb_substr($ya->artistFrigana , 0 , 1) == "ヨ" or
+                mb_substr($ya->artistFrigana , 0 , 1) == "ャ" or 
+                mb_substr($ya->artistFrigana , 0 , 1) == "ュ" or
+                mb_substr($ya->artistFrigana , 0 , 1) == "ョ" )
                 <li><a href="">{{ $ya->artistName }}</a></li>
             @endif
         @endforeach
@@ -149,13 +174,55 @@
         <label class="odd" for="menu_bar11">a~z</label>
         <input type="checkbox" id="menu_bar11" class="accordion" />
         <ul id="links11">
-            <li><a href="">Link01</a></li>
+        @foreach ($user as $alfa)
+            @if(mb_substr($alfa->artistFrigana , 0 , 1) == "a" or 
+                mb_substr($alfa->artistFrigana , 0 , 1) == "b" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "c" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "d" or 
+                mb_substr($alfa->artistFrigana , 0 , 1) == "e" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "f" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "g" or 
+                mb_substr($alfa->artistFrigana , 0 , 1) == "h" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "i" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "j" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "k" or 
+                mb_substr($alfa->artistFrigana , 0 , 1) == "l" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "m" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "n" or 
+                mb_substr($alfa->artistFrigana , 0 , 1) == "o" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "p" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "q" or 
+                mb_substr($alfa->artistFrigana , 0 , 1) == "r" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "s" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "t" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "u" or 
+                mb_substr($alfa->artistFrigana , 0 , 1) == "v" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "w" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "x" or
+                mb_substr($alfa->artistFrigana , 0 , 1) == "y" or 
+                mb_substr($alfa->artistFrigana , 0 , 1) == "z" )
+                <li><a href="">{{ $wa->artistName }}</a></li>
+            @endif
+        @endforeach
         </ul>
 
         <label for="menu_bar12">数字記号</label>
         <input type="checkbox" id="menu_bar12" class="accordion" />
         <ul id="links12">
-            <li><a href="">Link01</a></li>
+        @foreach ($user as $kazu)
+            @if(mb_substr($kazu->artistFrigana , 0 , 1) == "1" or 
+                mb_substr($kazu->artistFrigana , 0 , 1) == "2" or
+                mb_substr($kazu->artistFrigana , 0 , 1) == "3" or
+                mb_substr($kazu->artistFrigana , 0 , 1) == "4" or 
+                mb_substr($kazu->artistFrigana , 0 , 1) == "5" or
+                mb_substr($kazu->artistFrigana , 0 , 1) == "6" or
+                mb_substr($kazu->artistFrigana , 0 , 1) == "7" or 
+                mb_substr($kazu->artistFrigana , 0 , 1) == "8" or
+                mb_substr($kazu->artistFrigana , 0 , 1) == "9" or
+                mb_substr($kazu->artistFrigana , 0 , 1) == "0")
+                <li><a href="">{{ $wa->artistName }}</a></li>
+            @endif
+        @endforeach
         </ul>
     </div>
     <!----- メインコンテンツ END ----->

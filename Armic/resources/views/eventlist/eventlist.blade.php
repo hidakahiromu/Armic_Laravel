@@ -5,7 +5,10 @@
     <link rel="stylesheet" href="css/toppage.css">
 
 </head>
-<?php $cnt = 0; ?>
+
+<?php $cnt = 0 ?>
+
+
 @extends('layouts.app')
 @section('content')
 <!--イベント要素-->
@@ -21,30 +24,30 @@
         </li>
         <li>
             <span class="nodesize">2021年1月21日開催</span>
-            <a href=""><img src="" width="140px" height="80px"></a>
+            <a href=""><img src="../../image/" width="140px" height="80px"></a>
             <div class="drumname">
-                <span>LISA</span>
+                <span><small>Clif</small></span>
             </div>
         </li>
         <li>
             <span class="nodesize">2021年1月22日開催</span>
-            <a href=""><img src="" width="140px" height="80px"></a>
+            <a href=""><img src="../../image/" width="140px" height="80px"></a>
             <div class="drumname">
                 <span><small>oiler</small></span>
             </div>
         </li>
         <li>
             <span class="nodesize">2021年1月23日開催</span>
-            <a href=""><img src="" width="140px" height="80px"></a>
+            <a href=""><img src="../../image/" width="140px" height="80px"></a>
             <div class="drumname">
                 <span><small>caster</small></span>
             </div>
         </li>
         <li>
             <span class="nodesize">2021年1月24日開催</span>
-            <a href=""><img src="" width="140px" height="80px"></a>
+            <a href=""><img src="../../image/" width="140px" height="80px"></a>
             <div class="drumname">
-                <span><small>aiko</small></span>
+                <span><small>佐々木簪</small></span>
             </div>
 
         </li>
@@ -58,10 +61,11 @@
 </li>
 <!--イベント新規作成↑-->
 
+
 @foreach($date as $event)
 <?php ++$cnt ?>
 <div class="event_all">
-    <div class="photo"><img src="../../image/&cnt.png" alt=""></div>
+    <div class="photo"><img src="../../image/{{$cnt}}.jpg" alt=""></div>
     <!-- {{asset('storage/image/'.$event->file)}} -->
     <div class="details">
         <div class="category">
@@ -78,7 +82,9 @@
         </div>
     </div>
 </div>
+
 @endforeach
+
 <!-- <div class="event_all">
     <div class="photo"><img src="" alt=""></div>
     <div class="details">
