@@ -23,7 +23,7 @@
         <br><a id="mandatory">必須</a>は必ず入力してください<br>
 
         <!--↓action = ""送信先 　method = "post"送信形式?URLに送信内容を表示させない（get内容を表示する）-->
-        <form action="{{route('event')}}" method="post" enctype="multipart/form-data">
+        <form action="/event" method="post" enctype="multipart/form-data">
             @csrf
             <a id="item">■依頼者情報 &emsp; ※一般には非公開です</a>
             <!--フォーム要素1(名前)-->

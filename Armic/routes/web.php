@@ -35,9 +35,10 @@ Route::post('/postmovie/in', 'viewControllers\musiclist_Post_PageController@inde
 /*return view('eventlist/eventlist')*/
 Route::get('/event', 'EventController@index');
 
+Route::get('/event/eventRegistration', 'EventRegistrationController@index');
+Route::post('/event', 'EventRegistrationController@create');
 
-/*Route::resource('/event', 'EventController');*/
-Route::resource('/event/eventRegistration', 'EventRegistrationController');
+
 
 
 /*マイページ*/
@@ -73,10 +74,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-//Route::resource('/event/eventRegistration', 'EventRegistrationController');
-Route::get('/event/eventRegistration', 'EventRegistrationController@index');
-Route::post('/event', 'EventRegistrationController@create');
 
 /*
 Route::get('/', function () {

@@ -16,7 +16,7 @@ class EventRegistrationController extends Controller
      */
     public function index()
     {
-        return view('eventlist/eventRegistration');
+        return view('/eventlist/eventRegistration');
     }
 
     /**
