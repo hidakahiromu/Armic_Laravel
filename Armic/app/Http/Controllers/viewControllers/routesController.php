@@ -4,6 +4,7 @@ namespace App\Http\Controllers\viewControllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Event;
 
 class routesController extends Controller
 {
@@ -14,7 +15,9 @@ class routesController extends Controller
      */
     public function index()
     {
-        return view('toppage');
+        $date = Event::all();
+
+        return view('toppage')->with('date',$date);
     }
 
     /**

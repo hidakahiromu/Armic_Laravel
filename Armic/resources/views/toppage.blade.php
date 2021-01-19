@@ -2,6 +2,9 @@
   <link rel="stylesheet" href="css/toppage.css">
 </head>
 
+<?php
+$cnt = 0;
+?>
 
 @extends('layouts.app')
 
@@ -237,28 +240,37 @@
     </ul>
   </div> 　
   <!--イベントBOX-->
-  　
+
+  
   　<h2 class="Heading">
     <nobr>イベント情報</nobr>
   </h2>
+
+  @foreach($date as $event)
   <div class="ED">
     <div class="ED_card">
       <div class="details">
         <div class="category">
-          <p>初ライブ</p><br>
+          <p>ライブ</p><br>
         </div>
-        <div class="date"><span class="day">2021.01.01</span></div>
+        <div class="date"><span class="day">{{ $event->event_day }}</span></div>
       </div>
       <div class="description">
-        <h1>記事タイトル</h1>
+        <h1>{{ $event->event_name }}</h1>
         <div class="text">
-          <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している...</p>
+          <p>{{ $event->event_introduction }}</p>
           <a href="#0" class="">詳しく見る</a>
         </div>
       </div>
     </div>
+  <?php ++$cnt ?>
+  @if($cnt>1)
+  @break
+  @endif
 
-    <div class="ED_card">
+@endforeach
+
+<!--     <div class="ED_card">
       <div class="details">
         <div class="category">
           <p>トーク</p><br>
@@ -281,7 +293,7 @@
       </div>
     </div>
   </div>
-  </div>
+  </div> -->
 
   <!--ページトップ-->
   <div id="page_top"><a href="#"></a></div>

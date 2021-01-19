@@ -16,35 +16,35 @@
     <ul class="horizontal_scroll ">
         <li>
             <span class="nodesize">2021年1月20日開催</span>
-            <a href=""><img src="../../image/armicicon.png" width="140px" height="80px"></a>
+            <a href=""><img src="../../image/a.jpg" width="140px" height="80px"></a>
             <div class="drumname">
                 <span><small>libru</small></span>
             </div>
         </li>
         <li>
             <span class="nodesize">2021年1月21日開催</span>
-            <a href=""><img src="../../image/" width="140px" height="80px"></a>
+            <a href=""><img src="../../image/b.jpg" width="140px" height="80px"></a>
             <div class="drumname">
                 <span><small>Clif</small></span>
             </div>
         </li>
         <li>
             <span class="nodesize">2021年1月22日開催</span>
-            <a href=""><img src="../../image/" width="140px" height="80px"></a>
+            <a href=""><img src="../../image/c.jpg" width="140px" height="80px"></a>
             <div class="drumname">
                 <span><small>oiler</small></span>
             </div>
         </li>
         <li>
             <span class="nodesize">2021年1月23日開催</span>
-            <a href=""><img src="../../image/" width="140px" height="80px"></a>
+            <a href=""><img src="../../image/d.jpg" width="140px" height="80px"></a>
             <div class="drumname">
                 <span><small>caster</small></span>
             </div>
         </li>
         <li>
             <span class="nodesize">2021年1月24日開催</span>
-            <a href=""><img src="../../image/" width="140px" height="80px"></a>
+            <a href=""><img src="../../image/e.jpg" width="140px" height="80px"></a>
             <div class="drumname">
                 <span><small>佐々木簪</small></span>
             </div>
@@ -65,7 +65,7 @@
     @foreach($date as $event)   
     <?php ++$cnt ?>
         <div class="event_all">
-            <div class="photo"><img src="../../image/{{$cnt}}.jpg" alt=""></div>
+            <div class="photo"><img src="../../image/{{$cnt}}.jpg" alt="" ></div>
                 <!-- {{asset('storage/image/'.$event->file)}} -->
             <div class="details">
                 <div class="category">
