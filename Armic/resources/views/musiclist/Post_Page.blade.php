@@ -4,6 +4,13 @@
 <?php
 $cnt = 0;
 $cnt2 = 1;
+$URL1 = '<ul class="post_group_$cnt2">
+<li calss="post_list_$cnt"><nobr>
+<iframe width="320" height="180" src="';
+
+$URL2 = '" frameborder="0" allow="accelerometer; autoplay; 
+clipboard-write; encrypted-media; gyroscope; 
+picture-in-picture" allowfullscreen></iframe>';
 ?>
 
 @extends('layouts.app')
@@ -25,26 +32,27 @@ $cnt2 = 1;
       if ($cnt2 > 4) {
         goto a;
       }
-      echo '<ul class="post_group_$cnt2">
-             <li calss="post_list_$cnt">
-            <nobr><iframe width="320" height="180" src=" '; ?>
-      {{ $event->URL}}
-
-      <?php echo ' " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></nobr>
-      </li>
-      <li calss="post_element_$cnt">
-      <form method="POST" action="/postmovie/in" name="LOGIN">' ?>@csrf<?php echo '
-      <input type="hidden" name="URL" value="'; ?>{{ $event->URL}}<?php echo '">
-      <input type="hidden" name="title" value="'; ?>{{ $event->title}}<?php echo '">
-      <input type="hidden" name="profile" value="'; ?>{{ $event->profile}}<?php echo '">
-      <input  type="submit" class="post_element_box" value="'; ?>
-
-      {{ $event->title}}
-      <?php echo ' ">
-      </form>
+      ?>
+      <ul class="post_group_"{{ $cnt2 }}>
+        <li class="post_list_$cnt">
+            <nobr>
+              <?php echo $URL1;
+              echo $event->URL;
+              echo $URL2; ?></nobr>
+        </li>
+      <li class="post_element_$cnt">
+        <form method="POST" action="/postmovie/in" name="LOGIN">
+        @csrf
+          <input type="hidden" name="URL" value="{{ $event->URL }}" >
+          <input type="hidden" name="title" value="{{ $event->title }}" >
+          <input type="hidden" name="profile" value="{{ $event->profile}}" >
+        
+          <input  type="submit" class="post_element_box" value="{{ $event->title }}">
+      
+        </form>
     
       <br>
-      <a href="アーティストページのlink" title="アーティスト">'; ?>{{ $event->userID}}<?php echo '</a><br><br><br>
+      <a href="アーティストページのlink" title="アーティスト">{{ $event->userID }}</a><br><br><br>
      
       
       <p>☆☆☆☆☆()</p>
@@ -52,8 +60,7 @@ $cnt2 = 1;
      
       <p>タグ、カテゴリ</p>
       </li>
-      <ul>';
-                                                                      a: ?>
+      <?php a: ?>
       @if ($cnt2>4)
       @break
       @endif

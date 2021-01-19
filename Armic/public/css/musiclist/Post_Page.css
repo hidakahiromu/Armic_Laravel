@@ -5,9 +5,9 @@
 .body{
     
     color: #5e5e5e;
-    margin: 5px 100px 13px 100px;
-    padding: 10px 90px 100px 90px;
-    background-color: white;
+    background-color:  #e6e6e6;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font: 400 87.5%/1.5em 'Open Sans', sans-serif;
   
 }
@@ -31,7 +31,7 @@
 ul  li:nth-of-type(2),li:nth-of-type(4)  {   
     -webkit-flex-basis: 270px;
     flex-basis: 270px;
-    overflow: auto;
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }　
@@ -140,6 +140,14 @@ ul  li:nth-of-type(2),li:nth-of-type(4)  {
         
     }
     #footer .copyright{
-        text-align: center
+        text-align: center;
     }
+}
+
+.post_element_box{
+    display: block;
+    width: 200px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
