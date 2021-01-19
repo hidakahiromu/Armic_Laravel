@@ -1,0 +1,168 @@
+
+/* Simple Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* body */
+body {
+  background-image: url("Space.jpg");
+  color: #5e5e5e;
+  font: 400 87.5%/1.5em 'Open Sans', sans-serif;
+  margin: 0 ;
+  padding: 0 ;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #e6e6e6;
+  padding-top: 80px;
+}
+ /*ulのマネージ*/
+	 ul {
+	display: block;
+  list-style-type: disc;
+  margin-block-end: 1em;
+	margin-inline-start: 70px;
+	margin-inline-end: 70px;
+	padding-inline-start: 0px;
+	}
+
+/*ヘッダ-----------------------------------------------*/
+ 
+header{
+  top: 0px;/*画面topからの距離*/
+  width: 100%;/*サイドの幅*/
+  height: 68px;/*ヘッダの上下幅*/
+  background-color: white;/*色*/
+  z-index: 9999;
+  position: fixed;/*ヘッダ固定*/
+  }
+  .header-ul{
+  display: flex;/*header直下の子要素のレイアウトをコントロール*/
+  align-items :center; /*要素の縦方向の位置　center＝中心*/
+  margin:auto ;
+  }
+   
+	.header_logo {
+        text-align: center;   
+    }
+  .header_list{
+        list-style:none;
+        overflow: hidden;
+        text-align: center;
+        float: left;
+        margin: auto;
+    }
+    .header_list a{
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+    }
+ 
+    .header_list li{
+        margin: 0;
+        width:120px;
+        text-align: center;
+        float: left;
+        list-style: none;
+    }
+
+ /*大見出し*/
+    .Heading{
+      font-size: 25px;
+      background:white;
+      height: 40px;
+      padding: 10px ;
+      text-align : center;
+      margin: 0 50px 0 50px;
+    }
+  /*ジャンプポジション*/
+  .JpPoji{
+    padding-top: 68px;
+    margin-top:-68px;
+  }
+    
+.box{
+margin: 5px 100px 13px 100px;
+padding: 10px 90px 100px 90px;
+background-color: white;
+
+}  
+.box dd{
+    text-align : centr ;
+}
+
+
+/*フッダー*/
+#footer{
+    background-color: white ;
+}  
+#footer .logo {
+   padding: 20px;
+   
+   margin: 10px 30px;
+   text-align:center;
+ }
+ 
+ #footer .nav {
+  text-align:center;
+  list-style: none;
+}
+
+  
+ #footer .nav li a {
+   padding: 30px;
+   color: black;
+ }
+  
+ #footer .c-btn {
+   margin-left: 45px;
+   padding: 0 0 0 px;
+   margin-right: 30px;
+ }
+ #footer .copyright{
+  background:rgb(231, 231, 231);
+  text-align: center;
+  color : #000;
+}
+  
+ @media screen and (min-width: 641px) {
+   #footer.logo {
+     padding: 10px 0;
+   }
+  
+   #footer .wrap {
+     padding: 20px 0;
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+  
+   #footer .cont {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     flex-direction: row-reverse;
+     align-items: center;
+   }
+  
+   #footer .nav {
+     display: inline-block;
+     list-style: none;
+   }
+  
+  
+   #footer .nav li a:hover {
+     color: #ca353b;
+     
+   }
+   #footer .copyright{
+     background:rgb(231, 231, 231);
+     text-align: center;
+     color : #000;
+   }
+  #footer .sabu{
+    text-align: right;
+  }
+}
+  

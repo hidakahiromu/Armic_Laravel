@@ -4,10 +4,10 @@
 </head>
 
 
-    @extends('layouts.app-2')
-    @section('content')
-    <!--イベント投稿フォーム-->
-    <div class="body">
+@extends('layouts.app')
+@section('content')
+<!--イベント投稿フォーム-->
+<div class="body">
     <div class="back_ground">
         <h2>イベント投稿フォーム</h2>
 
@@ -17,6 +17,7 @@
             <p>■料金・チケット情報 : チケットの有無や料金に関することを入力してください</p>
             <p>■イベントのお問い合わせ先 : イベントに関するお問い合わせの受付先を入力してください</p>
         </div>
+
 
     <div class=left_margin><!--文字の左の余白指定-->
         <br><a id="mandatory">必須</a>は必ず入力してください<br>
@@ -125,4 +126,4 @@
 </div>
 
 
-    @endsection
+@endsection
