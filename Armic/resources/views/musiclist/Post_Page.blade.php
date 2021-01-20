@@ -15,7 +15,6 @@ picture-in-picture" allowfullscreen></iframe>';
 $youtube = 'https://www';     /*判定用URL*/
 $youtube2 = 'https://www.youtube.com/embed/'; /*くっつけるようの文字列*/
 $tube;                        /*入れ子用URL*/
-$tube2;
 
 ?>
 
@@ -29,10 +28,10 @@ $tube2;
       <?php
 
       if(strcasecmp(substr($event->URL,0,11) , $youtube) == 0 ){
-        $tube = $event->URL;
+        /*$tube = $event->URL;*/
       }else{
-        $tube2 = substr($event->URL,18);
-        $tube = $youtube2.$tube2;
+        $tube = mb_substr($event->URL,17);
+        $event->URL = $youtube2.$tube;
       }
       
 
@@ -58,7 +57,7 @@ $tube2;
         <li class="post_element_$cnt">
           <form method="POST" action="/postmovie/in" name="LOGIN">
             @csrf
-            <input type="hidden" name="URL" value="{{ $tube }}">
+            <input type="hidden" name="URL" value="{{ $event->URL }}">
             <input type="hidden" name="title" value="{{ $event->title }}">
             <input type="hidden" name="profile" value="{{ $event->profile}}">
 
@@ -68,7 +67,6 @@ $tube2;
 
           <br>
           <a href="アーティストページのlink" title="アーティスト">{{ $event->userID }}</a><br><br><br>
-
 
 
           <p>☆☆☆☆☆()</p>
