@@ -1,6 +1,8 @@
 <head>
     <link rel="stylesheet" href="css/eventlist/event.css">
-    <link rel="stylesheet" href="../css/toppage.css">
+    <!--<link rel="stylesheet" href="css/eventlist/Top_page.css">-->
+    <!--これバグ凄い-->
+    <link rel="stylesheet" href="css/toppage.css">
 
 </head>
 
