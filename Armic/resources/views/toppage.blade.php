@@ -10,6 +10,7 @@ $cnt = 0;
 
 @section('content')
 
+
 <!--スライドショー-->
 <div class="slideshow">
     <input type="radio" name="slideshow" id="switch1" checked>
