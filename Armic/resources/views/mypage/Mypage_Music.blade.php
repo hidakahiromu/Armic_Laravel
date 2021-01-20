@@ -58,7 +58,7 @@
 
                 <div class=Mypage_post_button_fream>
                     <div class=Mypage_post_button_rightfream>
-                        <input type="submit" class="button Mypage_Config_rightbutton" title="create_artist" value="登録" style="width:100%;height:100%"></input>
+                        <input type="submit" class="Mypage_Config_rightbutton" title="create_artist" value="登録" style="width:100%;height:100%"></input>
                     </div>
                     <div class=Mypage_post_button_leftfream>
                         <a href="/mypage">

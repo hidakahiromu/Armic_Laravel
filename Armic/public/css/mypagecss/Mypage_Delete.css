@@ -64,6 +64,7 @@
     .Mypage_Config_rightbutton {
         border: none;
         background: rgb(248, 156, 248);
+        font-size: 2em;
     }
     
     .Mypage_Config_rightbutton:hover {
