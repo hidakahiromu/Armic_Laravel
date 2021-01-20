@@ -186,7 +186,7 @@ $cnt = 0;
         <a href="#">
           <div>
             <time datetime="2016-1-1">2020.1.16</time>
-            <p class="cat01">cat01</p>
+            <p class="cat01">エンタメ</p>
           </div>
           <p> leoがニューシングル「LET'S MUSIC」発売、「でっけぇお風呂で待ってます」主題歌に </p>
         </a>
@@ -196,7 +196,7 @@ $cnt = 0;
         <a href="#">
           <div>
             <time datetime="2016-1-1">2020.1.15</time>
-            <p class="cat02">cat01</p>
+            <p class="cat02">ムービー</p>
           </div>
           <p> CHiSA×Urura、Ayaka書き下ろしのCM曲「突然」をTHE FIRST TAKEでパフォーマンス </p>
         </a>
@@ -205,7 +205,7 @@ $cnt = 0;
         <a href="#">
           <div>
             <time datetime="2016-1-1">2020.1.14</time>
-            <p class="cat01">cat01</p>
+            <p class="cat01">アルバム</p>
           </div>
           <p> 骨骨CLUB、コロナ禍の混沌と混乱打ち破るニューアルバム発表 </p>
         </a>
@@ -214,7 +214,7 @@ $cnt = 0;
         <a href="#">
           <div>
             <time datetime="2016-1-1">2020.1.13</time>
-            <p class="cat02">cat02</p>
+            <p class="cat02">アニメ</p>
           </div>
           <p> HIDERとCo chouの「血気廻戦」テーマ曲が音源化 </p>
         </a>
@@ -223,19 +223,12 @@ $cnt = 0;
         <a href="#">
           <div>
             <time datetime="2016-1-1">2020.1.12</time>
-            <p class="cat01">cat01</p>
+            <p class="cat01">エンタメ</p>
           </div>
-          <p> 2020.1.12 mAsAki、誕生日にSHOWROOMで初ワンマン開催「会えたら会おうね」 </p>
+          <p>mAsAki、誕生日にSHOWROOMで初ワンマン開催「会えたら会おうね」 </p>
         </a>
       </li>
-      <li class="NewsBar2">
-        <a href="#">
-          <div>
-            <time datetime="2016-1-1">2019.01.01</time>
-            <p class="cat02">cat02</p>
-          </div>
-          <p> テキストテキスト </p>
-        </a>
+     
       </li>
     </ul>
   </div> 　
