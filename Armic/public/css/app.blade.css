@@ -22,7 +22,7 @@ body {
   }
   
   /*ulのマネージ*/
-  ul {
+  footer ul {
     display: block;
     list-style-type: disc;
     margin-block-end: 1em;
