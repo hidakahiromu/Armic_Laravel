@@ -1,8 +1,6 @@
 <head>
     <link rel="stylesheet" href="css/eventlist/event.css">
-    <!--<link rel="stylesheet" href="css/eventlist/Top_page.css">-->
-    <!--これバグ凄い-->
-    <link rel="stylesheet" href="css/toppage.css">
+    <link rel="stylesheet" href="../css/toppage.css">
 
 </head>
 
@@ -56,8 +54,11 @@
 <!--イベント要素-->
 <li class="sbs">
     <h2 class="slider_ttl">新着イベント</h2>
+    @guest
+    @else
     <!--イベント新規作成↓-->
     <div class="new_create"><a href="/event/eventRegistration">新規作成</a> </div>
+    @endguest
 </li>
 <!--イベント新規作成↑-->
 

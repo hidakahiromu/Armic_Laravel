@@ -6,8 +6,11 @@
 
 @section('content')
 <div class="body">
+    @guest
     <!-- アーティスト登録 -->
+    @else
     <div class="new_create"><a href="/artistlist/artistlistRegistration">アーティスト登録はこちら</a> </div>
+    @endguest
     <!----- メインコンテンツ ----->
     <div class="menu">
         <label class="odd" for="menu_bar01">あ行</label>
