@@ -11,6 +11,12 @@ $URL1 = '<ul class="post_group_$cnt2">
 $URL2 = '" frameborder="0" allow="accelerometer; autoplay; 
 clipboard-write; encrypted-media; gyroscope; 
 picture-in-picture" allowfullscreen></iframe>';
+
+$youtube = 'https://www';     /*判定用URL*/
+$youtube2 = 'https://www.youtube.com/embed/'; /*くっつけるようの文字列*/
+$tube;                        /*入れ子用URL*/
+$tube2;
+
 ?>
 
 @extends('layouts.app')
@@ -21,6 +27,15 @@ picture-in-picture" allowfullscreen></iframe>';
     <div>
       @foreach($date as $event)
       <?php
+
+      if(strcasecmp(substr($event->URL,0,11) , $youtube) == 0 ){
+        $tube = $event->URL;
+      }else{
+        $tube2 = substr($event->URL,18);
+        $tube = $youtube2.$tube2;
+      }
+      
+
 
       ++$cnt;
       if ($cnt > 2) {
@@ -43,7 +58,7 @@ picture-in-picture" allowfullscreen></iframe>';
         <li class="post_element_$cnt">
           <form method="POST" action="/postmovie/in" name="LOGIN">
             @csrf
-            <input type="hidden" name="URL" value="{{ $event->URL }}">
+            <input type="hidden" name="URL" value="{{ $tube }}">
             <input type="hidden" name="title" value="{{ $event->title }}">
             <input type="hidden" name="profile" value="{{ $event->profile}}">
 
