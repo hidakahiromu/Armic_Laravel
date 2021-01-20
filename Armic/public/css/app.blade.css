@@ -15,10 +15,10 @@ body {
  .ulul {
 	display: block;
   list-style-type: disc;
-  margin-block-end: 1em;
-	margin-inline-start: 70px;
-	margin-inline-end: 70px;
-	padding-inline-start: 0px;
+  margin-block-end: 2em;
+	margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
 	}
 /*ヘッダ-----------------------------------------------*/
  
@@ -242,10 +242,7 @@ header{
      
     header .header_list2 li ul{
         position: absolute;
-        top: 30px;
-        
-        
-       
+        top: 45px;
     }
     header .header_list2 li ul li{
         display: block;
