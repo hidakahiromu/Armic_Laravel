@@ -5,6 +5,7 @@
 
 @section('content')
 <!-- Q&A -->
+<div class="QandA">
 <p class="QATitle">Q&A</p>
 <div class="QA">
     <div class="QA1">カテゴリーなど</div>
@@ -22,6 +23,7 @@
         <dd>答えテキスト</dd>
     </dl>
     </div>
+</div>
 <!-- Q&Aここまで -->
 
 <!--ページトップ-->
