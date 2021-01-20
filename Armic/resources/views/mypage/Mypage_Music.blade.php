@@ -25,7 +25,7 @@
             <div>
                 @csrf
                 <div class="MyPageConfig_form-event">
-                    <p>userID
+                    <p>アーティスト名
                     <p>
                         <label for="title"></label>
                         <input type="text" name="userID" required="required" <!--placeholder="名前" --></input>
