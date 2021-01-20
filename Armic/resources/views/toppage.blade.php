@@ -259,7 +259,7 @@ $cnt = 0;
         <h1>{{ $event->event_name }}</h1>
         <div class="text">
           <p>{{ $event->event_introduction }}</p>
-          <a href="#0" class="">詳しく見る</a>
+          <a href="/event" class="">詳しく見る</a>
         </div>
       </div>
     </div>
