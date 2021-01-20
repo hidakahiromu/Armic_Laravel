@@ -185,47 +185,47 @@ $cnt = 0;
       <li class="NewsBar1">
         <a href="#">
           <div>
-            <time datetime="2016-1-1">2020.12.01</time>
+            <time datetime="2016-1-1">2020.1.16</time>
             <p class="cat01">cat01</p>
           </div>
-          <p> ニュース１テキストテキスト </p>
+          <p> leoがニューシングル「LET'S MUSIC」発売、「でっけぇお風呂で待ってます」主題歌に </p>
         </a>
       </li>
       <!--ニュース２-->
       <li class="NewsBar2">
         <a href="#">
           <div>
-            <time datetime="2016-1-1">2020.12.01</time>
+            <time datetime="2016-1-1">2020.1.15</time>
             <p class="cat02">cat01</p>
           </div>
-          <p> ニュース２テキストテキスト </p>
+          <p> CHiSA×Urura、Ayaka書き下ろしのCM曲「突然」をTHE FIRST TAKEでパフォーマンス </p>
         </a>
       </li>
       <li class="NewsBar1">
         <a href="#">
           <div>
-            <time datetime="2016-1-1">2020.12.01</time>
+            <time datetime="2016-1-1">2020.1.14</time>
             <p class="cat01">cat01</p>
           </div>
-          <p> テキストテキスト </p>
+          <p> 骨骨CLUB、コロナ禍の混沌と混乱打ち破るニューアルバム発表 </p>
         </a>
       </li>
       <li class="NewsBar2">
         <a href="#">
           <div>
-            <time datetime="2016-1-1">2020.01.01</time>
+            <time datetime="2016-1-1">2020.1.13</time>
             <p class="cat02">cat02</p>
           </div>
-          <p> テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト </p>
+          <p> HIDERとCo chouの「血気廻戦」テーマ曲が音源化 </p>
         </a>
       </li>
       <li class="NewsBar1">
         <a href="#">
           <div>
-            <time datetime="2016-1-1">2019.09.01</time>
+            <time datetime="2016-1-1">2020.1.12</time>
             <p class="cat01">cat01</p>
           </div>
-          <p> テキストテキスト </p>
+          <p> 2020.1.12 mAsAki、誕生日にSHOWROOMで初ワンマン開催「会えたら会おうね」 </p>
         </a>
       </li>
       <li class="NewsBar2">
