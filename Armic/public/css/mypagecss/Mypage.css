@@ -122,6 +122,10 @@ margin: 10em;
 /*----------------------------過去に投稿した音楽*/
 
 .Mypage_Posted_MusicBox {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
     margin-top: 50px;
     height: auto;
     /*表の高さ*/
@@ -130,7 +134,7 @@ margin: 10em;
 }
 
 .Mypage_MusicBox_Delete {
-    width: 100%;
+    
     height: 100%;
 }
 
@@ -149,34 +153,47 @@ margin: 10em;
 }
 
 .Mypage_Posted_MusicBox_Table {
+   
     border-collapse: collapse;
     /*表ボーダー二重線解除*/
-    width: 100%;
     
 }
 
-.Mypage_Posted_MusicBox_Table tr * {
+
+.Mypage_Posted_MusicBox_Table tr * { 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     border: solid 1px #c0c0c0;
+  
+    
 }
 
 .Mypage_Posted_MusicBox_TableNumber {
-    width: 10%;
+    min-width: 80px;
+    max-width: 80px;
+
 }
 
 .Mypage_Posted_MusicBox_TableMusic {
-    width: 35%;
+    
+    min-width: 280px;
+    max-width: 280px;
 }
 
 .Mypage_Posted_MusicBox_TableTime {
-    width: 25%;
+    min-width: 200px;
+    max-width: 200px;
 }
 
 .Mypage_Posted_MusicBox_TableSter {
-    width: 15%;
+    min-width: 120px;
+    max-width: 120px;
 }
 
 .Mypage_Posted_MusicBox_TableDelete {
-    width: 15%;
+    min-width: 120px;
+    max-width: 120px;
 }
 
 
@@ -192,6 +209,9 @@ margin: 10em;
 }
 
 .Mypage_Input_Posted_MusicBox tr * {
+     white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     border: solid 1px #c0c0c0;
 }
 

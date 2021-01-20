@@ -43,8 +43,8 @@ Route::post('/event', 'EventRegistrationController@create');
 
 /*マイページ*/
 /*return view('mypage.Mypage')*/
-Route::get('/mypage', 'viewControllers\mypageController@index');
 Route::post('/mypage', 'postController@create');
+Route::get('/mypage', 'viewControllers\mypageController@index');
 
 /*return view('mypage.Mypage_Delete')*/
 Route::get('/mypage/Delete', 'viewControllers\mypageController@index2');

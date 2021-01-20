@@ -56,269 +56,85 @@
 				<tr>
 					<th colspan="5">過去に投稿した音楽</th>
 				</tr>
-
 				<tr>
-					<th class='Mypage_Posted_MusicBox_TableNumber'>1</th>
-					<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-					<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-					<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
+					<th class='Mypage_Posted_MusicBox_TableNumber'>番号</th>
+					<td class='Mypage_Posted_MusicBox_TableMusic'>音楽名</td>
+					<td class='Mypage_Posted_MusicBox_TableTime'>URL</td>
+					<td class='Mypage_Posted_MusicBox_TableSter'>詳細</td>
 					<td class='Mypage_Posted_MusicBox_TableDelete'>
-						<div class='Mypage_MusicBox_Delete'><a href="/mypage/Delete"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-									<p>delete</p>
-								</button></a></div>
-					</td>
-				</tr>
-
-				<tr>
-					<th class='Mypage_Posted_MusicBox_TableNumber'>2</th>
-					<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-					<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-					<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-					<td class='Mypage_Posted_MusicBox_TableDelete'>
-						<div class='Mypage_MusicBox_Delete'><a href="/mypage/Delete"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-									<p>delete</p>
-								</button></a></div>
-					</td>
-				<tr>
-					<th class='Mypage_Posted_MusicBox_TableNumber'>3</th>
-					<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-					<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-					<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-					<td class='Mypage_Posted_MusicBox_TableDelete'>
-						<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-									<p>delete</p>
-								</button></a></div>
-					</td>
-				</tr>
-				<tr>
-					<th class='Mypage_Posted_MusicBox_TableNumber'>4</th>
-					<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-					<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-					<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-					<td class='Mypage_Posted_MusicBox_TableDelete'>
-						<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-									<p>delete</p>
-								</button></a></div>
-					</td>
-				</tr>
-				<tr>
-					<th class='Mypage_Posted_MusicBox_TableNumber'>5</th>
-					<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-					<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-					<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-					<td class='Mypage_Posted_MusicBox_TableDelete'>
-						<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-									<p>delete</p>
-								</button></a></div>
-					</td>
-				</tr>
-			</table>
-
-
-			<div class="menu">
-
-				<input class="Mypage_10menu" type="checkbox" id="change01" class="accordion" />
-				<ul id="links01">
-					<li>
-						<table class='Mypage_Input_Posted_MusicBox'>
-							<tr>
-								<th class='Mypage_Posted_MusicBox_TableNumber'>6</th>
-								<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-								<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-								<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-								<td class='Mypage_Posted_MusicBox_TableDelete'>
-									<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-												<p>delete</p>
-											</button></a></div>
-								</td>
-							</tr>
-							<tr>
-								<th class='Mypage_Posted_MusicBox_TableNumber'>7</th>
-								<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-								<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-								<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-								<td class='Mypage_Posted_MusicBox_TableDelete'>
-									<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-												<p>delete</p>
-											</button></a></div>
-								</td>
-							</tr>
-							<tr>
-								<th class='Mypage_Posted_MusicBox_TableNumber'>8</th>
-								<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-								<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-								<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-								<td class='Mypage_Posted_MusicBox_TableDelete'>
-									<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-												<p>delete</p>
-											</button></a></div>
-								</td>
-							</tr>
-							<tr>
-								<th class='Mypage_Posted_MusicBox_TableNumber'>9</th>
-								<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-								<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-								<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-								<td class='Mypage_Posted_MusicBox_TableDelete'>
-									<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-												<p>delete</p>
-											</button></a></div>
-								</td>
-							</tr>
-							<tr>
-								<th class='Mypage_Posted_MusicBox_TableNumber'>10</th>
-								<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-								<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-								<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-								<td class='Mypage_Posted_MusicBox_TableDelete'>
-									<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-												<p>delete</p>
-											</button></a></div>
-								</td>
-							</tr>
-						</table>
-					</li>
-				</ul>
-				<label class="Details_label" for="change01">詳細の開閉</label>
-
-			</div>
+						<p>消去ボタン</p>
 		</div>
-	</div>
+		</td>
+		</tr>
+		<?php $cnt = 0; ?>
+		@foreach($date as $event)
+		<?php ++$cnt; ?>
 
-	<div class='Mypage_GoodPosted_MusicBox'>
-		<table class='Mypage_GoodPosted_MusicBox_Table'>
+
+		<tr>
+			<th class='Mypage_Posted_MusicBox_TableNumber'>{{$cnt}}</th>
+			<td class='Mypage_Posted_MusicBox_TableMusic'>{{ $event->title }}</td>
+			<td class='Mypage_Posted_MusicBox_TableTime'>{{ $event->URL}}</td>
+			<td class='Mypage_Posted_MusicBox_TableSter'>{{ $event->profile}}</td>
+			<td class='Mypage_Posted_MusicBox_TableDelete'>
+				<div class='Mypage_MusicBox_Delete'><a href="/mypage/Delete"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
+							<p>delete</p>
+						</button></a></div>
+			</td>
+		</tr>
+		@if($cnt>4)
+		@break
+		@endif
+		@endforeach
 
 
-			<tr>
-				<th colspan="5">いいねをした音楽</th>
-			</tr>
 
-			<tr>
-				<th class='Mypage_Posted_MusicBox_TableNumber'>1</th>
-				<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-				<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-				<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-				<td class='Mypage_Posted_MusicBox_TableDelete'>
-					<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-								<p>delete</p>
-							</button></a></div>
-				</td>
-			</tr>
-
-			<tr>
-				<th class='Mypage_Posted_MusicBox_TableNumber'>2</th>
-				<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-				<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-				<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-				<td class='Mypage_Posted_MusicBox_TableDelete'>
-					<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-								<p>delete</p>
-							</button></a></div>
-				</td>
-			<tr>
-				<th class='Mypage_Posted_MusicBox_TableNumber'>3</th>
-				<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-				<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-				<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-				<td class='Mypage_Posted_MusicBox_TableDelete'>
-					<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-								<p>delete</p>
-							</button></a></div>
-				</td>
-			</tr>
-			<tr>
-				<th class='Mypage_Posted_MusicBox_TableNumber'>4</th>
-				<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-				<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-				<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-				<td class='Mypage_Posted_MusicBox_TableDelete'>
-					<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-								<p>delete</p>
-							</button></a></div>
-				</td>
-			</tr>
-			<tr>
-				<th class='Mypage_Posted_MusicBox_TableNumber'>5</th>
-				<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-				<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-				<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-				<td class='Mypage_Posted_MusicBox_TableDelete'>
-					<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-								<p>delete</p>
-							</button></a></div>
-				</td>
-			</tr>
+		</tr>
 		</table>
 
+		@if($cnt==5)
+		<div class="menu">
 
-		<div class="Goodmenu">
-
-			<input class="Mypage_Good10menu" type="checkbox" id="change02" class="accordion" />
-			<ul id="links02">
+			<input class="Mypage_10menu" type="checkbox" id="change01" class="accordion" />
+			<ul id="links01">
 				<li>
 					<table class='Mypage_Input_Posted_MusicBox'>
-						<tr>
-							<th class='Mypage_Posted_MusicBox_TableNumber'>6</th>
-							<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-							<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-							<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-							<td class='Mypage_Posted_MusicBox_TableDelete'>
-								<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-											<p>delete</p>
-										</button></a></div>
-							</td>
-						</tr>
 
+
+						<?php $cnt = 0; ?>
+						@foreach($date as $event)
+						<?php ++$cnt; ?>
+						@if(6>$cnt)
+						@continue
+						@endif
 						<tr>
-							<th class='Mypage_Posted_MusicBox_TableNumber'>7</th>
-							<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-							<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-							<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
+							<th class='Mypage_Posted_MusicBox_TableNumber'>{{$cnt}}</th>
+							<td class='Mypage_Posted_MusicBox_TableMusic'>{{ $event->title }}</td>
+							<td class='Mypage_Posted_MusicBox_TableTime'>{{ $event->URL}}</td>
+							<td class='Mypage_Posted_MusicBox_TableSter'>{{ $event->profile}}</td>
 							<td class='Mypage_Posted_MusicBox_TableDelete'>
-								<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-											<p>delete</p>
-										</button></a></div>
-							</td>
-						<tr>
-							<th class='Mypage_Posted_MusicBox_TableNumber'>8</th>
-							<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-							<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-							<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-							<td class='Mypage_Posted_MusicBox_TableDelete'>
-								<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-											<p>delete</p>
-										</button></a></div>
-							</td>
-						</tr>
-						<tr>
-							<th class='Mypage_Posted_MusicBox_TableNumber'>9</th>
-							<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-							<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-							<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-							<td class='Mypage_Posted_MusicBox_TableDelete'>
-								<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
+								<div class='Mypage_MusicBox_Delete'><a href="/mypage/Delete"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
 											<p>delete</p>
 										</button></a></div>
 							</td>
 						</tr>
-						<tr>
-							<th class='Mypage_Posted_MusicBox_TableNumber'>10</th>
-							<td class='Mypage_Posted_MusicBox_TableMusic'>-</td>
-							<td class='Mypage_Posted_MusicBox_TableTime'>-</td>
-							<td class='Mypage_Posted_MusicBox_TableSter'>-</td>
-							<td class='Mypage_Posted_MusicBox_TableDelete'>
-								<div class='Mypage_MusicBox_Delete'><a href="Mypage_Delete.php"><button class="Mypage_Delete_button" type="button" style="width:100%;height:100%">
-											<p>delete</p>
-										</button></a></div>
-							</td>
-						</tr>
+						@if($cnt>9)
+						@break
+						@endif
+						@endforeach
+
 					</table>
 				</li>
 			</ul>
-			<label class="GoodDetails_label" for="change02">詳細の開閉</label>
-
+			@if($cnt>5)
+			<label class="Details_label" for="change01">詳細の開閉</label>
+			@endif
 		</div>
+		@endif
 	</div>
 </div>
+
+
+
 
 @endsection

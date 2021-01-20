@@ -25,7 +25,7 @@
                         動画
                     </th>
                     <th>
-                        <iframe width="320" height="180" src="https://www.youtube.com/embed/6kUhRhoBNEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="320" height="180" src="https://www.youtube.com/embed/om3qyvPxsrY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </th>
 
                 </tr>
@@ -35,7 +35,7 @@
                         音楽名
                     </th>
                     <th>
-                        イギリス人が喋っている動画
+                        おとなあそび　神戸電子専門学校　IT分野　1年生
                     </th>
                 </tr>
                 <tr>
@@ -43,27 +43,12 @@
                         リンク
                         </td>
                     <th><a href="https://youtu.be/6kUhRhoBNEQ" target="_blank">
-                            https://youtu.be/6kUhRhoBNEQ
+                            https://www.youtube.com/embed/om3qyvPxsrY
                         </a>
 
                     </th>
                 </tr>
-                <tr>
-                    <th class="Mypage_Posted_MusicBox_Tabletitle4">
-                        投稿日時
-                    </th>
-                    <th>
-                        0000/00/00
-                    </th>
-                </tr>
-                <tr>
-                    <th class="Mypage_Posted_MusicBox_Tabletitle5">
-                        ★の数
-                        </td>
-                    <th>
-                        ★★★★★
-                        </td>
-                </tr>
+
             </table>
             <div class=Mypage_post_button_fream>
                 <div class=Mypage_post_button_rightfream>

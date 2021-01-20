@@ -4,6 +4,7 @@ namespace App\Http\Controllers\viewControllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Post;
 
 class mypageController extends Controller
 {
@@ -14,7 +15,8 @@ class mypageController extends Controller
      */
     public function index()
     {
-        return view('mypage.Mypage');
+        $date = Post::all();
+        return view('mypage.Mypage')->with('date', $date);
     }
     public function index2()
     {
