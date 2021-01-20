@@ -667,6 +667,14 @@ header{
   font-weight: bold;
 }
 
+/*Q&A*/
+
+.QandA{
+	margin: 4em;
+    padding: 20px;
+	background-color: #fff;
+}
+
 .QATitle{
   margin: 50px;
   font-size: 30px;
