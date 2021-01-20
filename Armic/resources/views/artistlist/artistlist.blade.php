@@ -223,7 +223,7 @@
                 <li><a href="">{{ $wa->artistName }}</a></li>
             @endif
         @endforeach
-        </ul>
+        </ul><br><br>
     </div>
     <!----- メインコンテンツ END ----->
 
