@@ -284,16 +284,16 @@ $cnt = 0;
           <a href="#0" class="">詳しく見る</a>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="ED_card">
       <div class="description_Jp">
         <p class="ED_jp"><strong>もっとイベントを探す</strong></p>
-        <a href="#0" class=""></a>
+        <a href="/event" class=""></a>
       </div>
     </div>
   </div>
-  </div> -->
+  </div> 
 
   <!--ページトップ-->
   <div id="page_top"><a href="#"></a></div>
