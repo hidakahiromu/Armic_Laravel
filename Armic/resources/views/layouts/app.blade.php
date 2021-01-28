@@ -23,10 +23,10 @@
             <nobr><a href="/tutorial" class="nav-link">チュートリアル</a></nobr>
           </a></li>
         <li><a href="/postmovie">
-            <nobr>投稿ページ</nobr>
+            <nobr>ミュージック</nobr>
           </a></li>
         <li><a href="/artistlist">
-            <nobr>アーティスト一覧</nobr>
+            <nobr>アーティスト</nobr>
           </a></li>
       </ul>
       <!--ロゴ-->

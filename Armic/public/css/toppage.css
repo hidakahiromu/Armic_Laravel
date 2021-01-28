@@ -182,9 +182,7 @@ body {
 /*サブタイトル*/
     .SubTitle{
       margin: 0 70px 0 70px;
-      font-size: 15px;
       background:white;
-      height: 50px;
     }
 
 /* 画面幅が768px以上の場合、横スクロールを解除 */
@@ -455,7 +453,7 @@ body {
   }
   .ED_card .description_Jp a:hover {
     opacity:0.2;
-    background:rgb(142, 227, 248);
+    background:#807a7a;
   }
 
 

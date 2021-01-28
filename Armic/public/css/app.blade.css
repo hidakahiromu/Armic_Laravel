@@ -68,8 +68,16 @@ header{
           text-align: center;
           float: left;
           list-style: none;
+          border-left: 1px solid #333;
+  border-right: 1px solid #333;
+        
       }
-  
+   
+      .header_list li+ li {
+        
+        border-left: 0;
+        border-right: 1px solid #333;
+        }        
    /*大見出し*/
       .Heading{
         font-size: 25px;
@@ -154,7 +162,6 @@ header{
    }
   
    #footer .wrap {
-     padding: 20px 0;
      display: -webkit-box;
      display: -webkit-flex;
      display: -ms-flexbox;
@@ -194,11 +201,11 @@ header{
 /*ページトップへのアイコン*/
 #page_top{
     width: 100px;
-    height: 60px;
+    height: 50px;
     position: fixed;
     right: 0;
     bottom: 0;
-    background: #ef3f98;
+    background: #d45996;
     opacity: 0.6;
     border-radius: 15px;
  }
